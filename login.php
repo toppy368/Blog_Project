@@ -5,13 +5,9 @@
 		<!--This file is login.php-->
 		<title>登入帳號 - 帳號管理介面</title>
 </head>
-	<body>
-		<!--HTML Hello World 測試-->
-		<h1>Hello World</h1></p>
+	<body>	
+		<h1>登入帳號 - 帳號管理介面</h1></p>
+		測試此文字能否正常顯示</p>
 		
-		<!--PHP Hello World測試-->
-		<?php
-			echo "Hello World"
-		?>
 	</body>
 </html>
