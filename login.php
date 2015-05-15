@@ -14,7 +14,7 @@
 		<!--本表單將以POST方式傳送資料回本檔案-->
 			<form action="login.php" method="post">
 				帳號：<input type="text" name="account" /></br>
-				密碼：<input type="password" name="password" /></br>
+				密碼：<input type="password" name="password" /></p>
 			<input type="submit" value="登入"></p>
 		
 	</body>
