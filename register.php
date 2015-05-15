@@ -18,5 +18,6 @@
 		再輸入密碼：<input type="password" name="check_password" /><p />
 		<input type="submit" value="申請帳號"></p>
 		
+		<!--以下為PHP章節，將使用者填好的帳號密碼透過PHP寫入到MySQL資料庫-->
 	</body>
 </html>
