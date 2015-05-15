@@ -16,6 +16,5 @@
 				帳號：<input type="text" name="account" /></br>
 				密碼：<input type="password" name="password" /></p>
 			<input type="submit" value="登入"></p>
-		
 	</body>
 </html>
