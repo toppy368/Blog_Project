@@ -52,3 +52,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 這裡會寫個檔案的建立時間及過程
 基本上跟GitHub的Commit紀錄相同
 但因為是手動，所以沒有上面Commit log紀錄那麼即時
+
+/Blog_Project 
+[建立] 使用說明_Readme.txt 於 2015.5.15 晚上 09:16:21 建立
+[建立] login.php 於 2015.5.15 晚上 10:29:23 建立
