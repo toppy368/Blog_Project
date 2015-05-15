@@ -13,9 +13,10 @@
 		<h2>請輸入您想申請的帳號密碼</h2></p>
 		<!--本HTML表單將以POST方式回傳資料回本檔案-->
 		<form action="register.php" method="post">
-		請輸入帳號：
-		請輸入密碼：
-		再輸入密碼：
+		請輸入帳號：<input type="text" name="account" /><br />
+		請輸入密碼：<input type="password" name="password" /><br />
+		再輸入密碼：<input type="password" name="check_password" /><p />
+		<input type="submit" value="申請帳號"></p>
 		
 	</body>
 </html>
