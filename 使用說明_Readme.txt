@@ -45,5 +45,5 @@ PHP檔案裏頭關於SQL連線的帳密資訊也記得更改
 這樣檔案測試存檔後
 能直接透過GitHub客戶端Commit並將程式碼即時同步上去
 
-本專案網址：https://github.com/toppy368/Blog_Project
+本專案資料夾網址：https://github.com/toppy368/Blog_Project
 Commit網址：https://github.com/toppy368/Blog_Project/commits/master
