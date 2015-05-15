@@ -11,7 +11,11 @@
 		登入 <b>註冊</b></p>
 		<!--HTML表單，註冊用途-->
 		<h2>請輸入您想申請的帳號密碼</h2></p>
-		
+		<!--本HTML表單將以POST方式回傳資料回本檔案-->
+		<form action="register.php" method="post">
+		請輸入帳號：
+		請輸入密碼：
+		再輸入密碼：
 		
 	</body>
 </html>
