@@ -16,18 +16,20 @@ WAMP軟體：XAMPP for Windows v5.6.8
 開發SDK：Notepad++
 
 #開發語言
-前端：HTML、CSS
+前端：HTML、CSS  
 後端：PHP、MySQL
 
+編碼：一律採用UTF-8
 
-###MySQL 帳號密碼 (公布原始碼)
+
+###MySQL 帳號密碼
 
 帳號：root
 密碼：DBPassword
 
 ##Apach 目錄帳密
 
-帳號：Blog
+帳號：Blog  
 密碼：Open
 
 ##安全性警告
@@ -39,13 +41,14 @@ WAMP軟體：XAMPP for Windows v5.6.8
 PHP檔案裏頭關於SQL連線的帳密資訊也記得更改
 以免因為帳密不符而造成ERROR
 
-##導入GitHub說明 (與下面的開發履歷相同)
+
+##導入GitHub說明 
 本次開發導入GitHub雲端版本管理
 將專案目錄建立在網頁伺服器根目錄
 這樣檔案測試存檔後
 能直接透過GitHub客戶端Commit並將程式碼即時同步上去
 
-本專案資料夾網址：https://github.com/toppy368/Blog_Project
+本專案資料夾網址：https://github.com/toppy368/Blog_Project  
 Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 ##開發履歷
