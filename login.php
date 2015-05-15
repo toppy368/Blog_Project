@@ -5,7 +5,7 @@
 		<!--This file is login.php-->
 		<title>登入帳號 - 帳號管理介面</title>
 </head>
-<body>
-
-</body>
+	<body>
+		<h1>Hello World</h1>
+	</body>
 </html>
