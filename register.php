@@ -6,6 +6,6 @@
 		<title>註冊帳號 - 帳號管理介面</title>
 </head>
 	<body>
-		
+		<h1>註冊帳號 - 帳號管理介面</h1></p>
 	</body>
 </html>
