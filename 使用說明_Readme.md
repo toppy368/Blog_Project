@@ -24,10 +24,10 @@ WAMP軟體：XAMPP for Windows v5.6.8
 
 ###MySQL 帳號密碼
 
-帳號：root
+帳號：root  
 密碼：DBPassword
 
-##Apach 目錄帳密
+##Apach 目錄帳密 (www目錄中的.htaccess)
 
 帳號：Blog  
 密碼：Open
@@ -51,16 +51,7 @@ PHP檔案裏頭關於SQL連線的帳密資訊也記得更改
 本專案資料夾網址：https://github.com/toppy368/Blog_Project  
 Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
-##開發履歷
-這裡會寫個檔案的建立時間及過程
-基本上跟GitHub的Commit紀錄相同
-但因為是手動，所以沒有上面Commit log紀錄那麼即時
-
 雖然GitHub有Commit功能，可以追蹤程式碼的變化
 不過我還是會每行寫註解，幫助大家了解每一行含式的功能是做什麼用的
 
-/Blog_Project 
-[建立] 使用說明_Readme.txt 於 2015.5.15 晚上 09:16:21 建立
-[建立] login.php 於 2015.5.15 晚上 10:29:23 建立
-[建立] register.php 於 2015.5.15 晚上 11:53:23 建立
 
