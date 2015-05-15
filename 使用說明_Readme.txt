@@ -39,7 +39,7 @@ WAMP軟體：XAMPP for Windows v5.6.8
 PHP檔案裏頭關於SQL連線的帳密資訊也記得更改
 以免因為帳密不符而造成ERROR
 
-##開發履歷
+##導入GitHub說明 (與下面的開發履歷相同)
 本次開發導入GitHub雲端版本管理
 將專案目錄建立在網頁伺服器根目錄
 這樣檔案測試存檔後
@@ -47,3 +47,8 @@ PHP檔案裏頭關於SQL連線的帳密資訊也記得更改
 
 本專案資料夾網址：https://github.com/toppy368/Blog_Project
 Commit網址：https://github.com/toppy368/Blog_Project/commits/master
+
+##開發履歷
+這裡會寫個檔案的建立時間及過程
+基本上跟GitHub的Commit紀錄相同
+但因為是手動，所以沒有上面Commit log紀錄那麼即時
