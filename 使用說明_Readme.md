@@ -56,6 +56,9 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 基本上跟GitHub的Commit紀錄相同
 但因為是手動，所以沒有上面Commit log紀錄那麼即時
 
+雖然GitHub有Commit功能，可以追蹤程式碼的變化
+不過我還是會每行寫註解，幫助大家了解每一行含式的功能是做什麼用的
+
 /Blog_Project 
 [建立] 使用說明_Readme.txt 於 2015.5.15 晚上 09:16:21 建立
 [建立] login.php 於 2015.5.15 晚上 10:29:23 建立
