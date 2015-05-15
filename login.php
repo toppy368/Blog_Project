@@ -6,6 +6,12 @@
 		<title>登入帳號 - 帳號管理介面</title>
 </head>
 	<body>
-		<h1>Hello World</h1>
+		<!--HTML Hello World 測試-->
+		<h1>Hello World</h1></p>
+		
+		<!--PHP Hello World測試-->
+		<?php
+			echo "Hello World"
+		?>
 	</body>
 </html>
