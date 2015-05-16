@@ -28,6 +28,9 @@ WAMP軟體：XAMPP for Windows v5.6.8
 
 帳號：root  
 密碼：DBPassword
+編碼：UTF8
+
+使用說明：資料庫SQL檔會放在專案根目錄下，請以"匯入"方式匯入到phpMyAdmin當中(編碼記得選UTF8)
 
 ###Apach 目錄帳密 (www目錄中的.htaccess)
 
