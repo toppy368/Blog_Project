@@ -5,7 +5,8 @@
 		<!--This file is login.php-->
 		<title>登入帳號 - 帳號管理介面</title>
 </head>
-	<body>	
+	<body>
+<!--本專案使用GNU GENERAL PUBLIC LICENSE Version 2為授權條款，詳情請訪問此目錄的LICENSE.txt-->	
 		<h1>登入帳號 - 帳號管理介面</h1></p>
 		<!--此行可讓使用者切換登入及註冊功能，首次訪問的朋友請註冊帳號-->
 		<b>登入</b>　註冊</p>

@@ -9,7 +9,7 @@
 再利用CSS框架設計Blog的樣板
 
 ##授權方式
-
+本專案選用的授權方式為GNU General Public License v2.0，詳情請訪問本目錄的LICENSE.txt檔案
 
 ##開發環境
 作業系統：Windows 7 家用進階版

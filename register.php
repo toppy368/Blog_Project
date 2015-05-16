@@ -6,6 +6,7 @@
 		<title>註冊帳號 - 帳號管理介面</title>
 </head>
 	<body>
+<!--本專案使用GNU GENERAL PUBLIC LICENSE Version 2為授權條款，詳情請訪問此目錄的LICENSE.txt-->
 		<h1>註冊帳號 - 帳號管理介面</h1></p>
 		<!--功能切換區，已申請帳號的訪客，按下"登入"連結可以回到登入頁面-->
 		登入 <b>註冊</b></p>
