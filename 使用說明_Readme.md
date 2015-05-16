@@ -27,7 +27,7 @@ WAMP軟體：XAMPP for Windows v5.6.8
 帳號：root  
 密碼：DBPassword
 
-##Apach 目錄帳密 (www目錄中的.htaccess)
+###Apach 目錄帳密 (www目錄中的.htaccess)
 
 帳號：Blog  
 密碼：Open
