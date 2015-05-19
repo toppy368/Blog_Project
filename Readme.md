@@ -13,9 +13,11 @@
 
 ##開發環境
 作業系統：Windows 7 家用進階版
-WAMP軟體：XAMPP for Windows v5.6.8 
-(包含以下：Apache 2.4.12, MySQL 5.6.24, PHP 5.6.8, phpMyAdmin 4.3.11)
+WAMP軟體：Wamp server2.5 64bit(從2015/5/19 更改為此版本為開發端) 
+XAMPP for Windows v5.6.8 (已停用)
 開發SDK：Notepad++
+
+注意：自2015/5/19，變更開發端，已移除WAMPP for Windows v5.6.8，並由Wamp server2.5 64bit取代
 
 #開發語言
 前端：HTML、CSS  
