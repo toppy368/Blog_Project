@@ -53,8 +53,11 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 直接把路徑網址複製到瀏覽器上，就能進入phpmyadmin登入畫面  
 
-一般來說，通常會由伺服器後台(安裝軟體提示或localhost根目錄可設定SQL密碼，虛擬主機則是從類似localhost的後台，如cPanel平台中設定)設定SQL帳號密碼，但WAMP則是要求從phpmyadmin設定，所以比較麻煩，下面將說明如何從phpmyadmin設定SQL的root帳密  
+一般來說，通常會由伺服器後台(參見註解說明)設定SQL帳號密碼，但WAMP則是要求從phpmyadmin設定，所以比較麻煩，下面將說明如何從phpmyadmin設定SQL的root帳密  
 
+###註解：
+1. 各WAMP系統的SQL帳密申請方式不同，如Appserv(已停止開發)是透過安裝軟體的指示設定phpmyadmin、xampp是透過localhost根目錄的安全選項來設定SQL帳密
+2. 虛擬主機則是依照主機商指示(E-mail內含帳密)或cpanel(主機商網站後台之一)的SQL的帳密設定來新增帳號與權限
 
 ###初始設定：修改 root 密碼
 1. 進入phpmyadmin後台  
