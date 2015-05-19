@@ -76,8 +76,8 @@ WAMP的phpmyadmin資料夾在此目錄下：C:\wamp\apps\phpmyadmin4.1.14
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/config.inc_2.jpg)  
 
 請透過搜尋方式找到並修改這幾行：  
-第35行的**['host']**，等於右邊請修改成**'localhost';**
-第40行的**[AllowNoPassword]**，等於右邊請設定為**false;**作用為**關閉**此功能
+第35行的**['host']**，等於右邊請修改成**'localhost';**  
+第40行的**[AllowNoPassword]**，等於右邊請設定為**false;**作用為**關閉**此功能  
 
 
 **2. 進入使用者頁面，修改root權限**  
