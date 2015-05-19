@@ -27,7 +27,7 @@ WAMP軟體：XAMPP for Windows v5.6.8
 ###MySQL 帳號密碼
 
 帳號：Blog_Project  
-密碼：BlogDB
+密碼：NQvZsN93vXcnJtwR
 編碼：UTF-8
 
 使用說明：資料庫SQL檔會放在專案根目錄下，請先進入phpmyadmin後，再"匯入"SQL資料庫檔，編碼請記得設定為UTF-8，以免發生錯誤
