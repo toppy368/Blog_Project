@@ -67,13 +67,17 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 因此必須修改root密碼以策安全  
 
 
-**2. 進入使用者頁面，修改root權限**
-
+**2. 進入使用者頁面，選擇"修改root權限"**
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_2.JPG)  
+主機為localhost的root帳號
 
 **3. 確認root帳號是否擁有全域權限**
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_3.JPG)
 
 **4. 修改root密碼**
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_4.JPG)
 
+**5. ERROR**
 
 
 **8. 開啟phpmyadmin根目錄**
