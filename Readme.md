@@ -60,9 +60,10 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 2. 虛擬主機則是依照主機商指示(E-mail內含帳密)或cpanel(主機商網站後台之一)的SQL的帳密設定來新增帳號與權限
 
 ###初始設定：修改 root 密碼
-1. 進入phpmyadmin後台  
+**1. 進入phpmyadmin後台**  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_head.JPG)
 
 一進去會直接看到錯誤訊息：**您的設定檔當中使用了** (**無設定密碼的 root**) **的設定，該設定是 MySQL 預設的管理帳號。若您繼續使用預設 MySQL 管理帳號執行伺服器，可能會導致伺服器被入侵，強烈建議您設定管理者帳號 'root' 的密碼以避免這個安全性的漏洞。**  
-因此必須修改root密碼以策安全
+因此必須修改root密碼以策安全  
+
 
