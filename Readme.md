@@ -26,11 +26,11 @@ WAMP軟體：XAMPP for Windows v5.6.8
 
 ###MySQL 帳號密碼
 
-帳號：root 
-密碼：K9vtUtyAKUhXQDeu
+帳號：<初始設定，等SQL章節寫完會填入帳密> 
+密碼：<初始設定，等SQL章節寫完會填入帳密>
 編碼：UTF-8
 
-使用說明：資料庫SQL檔會放在專案根目錄下，請先進入phpmyadmin後，再"匯入"SQL資料庫檔，編碼請記得設定為UTF-8，以免發生錯誤
+帳號密碼等SQL章節完成之後，會把設定的帳密填入上方欄位，詳細的使用說明請參考SQL章節
 
 ###Apach 目錄帳密 (www目錄中的.htaccess)
 
@@ -52,5 +52,10 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 雖然GitHub有Commit功能，可以追蹤程式碼的變化，不過我還是會每行寫註解，幫助大家了解每一行含式的功能是做什麼用的
 
 ##SQL 相關
+路徑：http://localhost/phpmyadmin/  
 
+
+###初始設定：修改 root 密碼
+一進去會直接看到錯誤訊息：您的設定檔當中使用了 (無設定密碼的 root) 的設定，該設定是 MySQL 預設的管理帳號。若您繼續使用預設 MySQL 管理帳號執行伺服器，可能會導致伺服器被入侵，強烈建議您設定管理者帳號 'root' 的密碼以避免這個安全性的漏洞。  
+因此必須修改root密碼以策安全
 
