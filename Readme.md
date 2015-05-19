@@ -66,6 +66,23 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 一進去會直接看到錯誤訊息：**您的設定檔當中使用了** (**無設定密碼的 root**) **的設定，該設定是 MySQL 預設的管理帳號。若您繼續使用預設 MySQL 管理帳號執行伺服器，可能會導致伺服器被入侵，強烈建議您設定管理者帳號 'root' 的密碼以避免這個安全性的漏洞。**  
 因此必須修改root密碼以策安全  
 
-**2. 修改權限**  
+**1. 開啟phpmyadmin根目錄**
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/config.inc_1.jpg)  
+WAMP的phpmyadmin資料夾在此目錄下：C:\wamp\apps\phpmyadmin4.1.14  
 
-**3. 修改phpmyadmin設定檔**
+在任何WAMP伺服器中，管理SQL的後台為phpmyadmin，而config.inc.php就存在phpmyadmin資料夾中，請找到該資料夾才能找到該檔案  
+
+**2. 開啟並修改congig.inc.php**
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/config.inc_2.jpg)  
+
+請修改以下幾行：
+**$cfg['Servers'][$i]['user'] = 'root';** 此為管理員帳號
+
+
+**2. 進入使用者頁面，修改root權限**  
+
+**3. 確認root帳號是否擁有全域權限**
+
+**4. 修改root密碼**
+
+**4. 修改phpmyadmin設定檔**
