@@ -51,8 +51,14 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 ##SQL 相關
 路徑：http://localhost/phpmyadmin/  
 
+直接把路徑網址複製到瀏覽器上，就能進入phpmyadmin登入畫面  
+
+一般來說，通常會由伺服器後台(安裝軟體提示或localhost根目錄可設定SQL密碼，虛擬主機則是從類似localhost的後台，如cPanel平台中設定)設定SQL帳號密碼，但WAMP則是要求從phpmyadmin設定，所以比較麻煩，下面將說明如何從phpmyadmin設定SQL的root帳密  
+
 
 ###初始設定：修改 root 密碼
+1. 進入phpmyadmin後台  
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_head.JPG)
 
 一進去會直接看到錯誤訊息：您的設定檔當中使用了 (無設定密碼的 root) 的設定，該設定是 MySQL 預設的管理帳號。若您繼續使用預設 MySQL 管理帳號執行伺服器，可能會導致伺服器被入侵，強烈建議您設定管理者帳號 'root' 的密碼以避免這個安全性的漏洞。  
 因此必須修改root密碼以策安全
