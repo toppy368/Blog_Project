@@ -73,6 +73,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 進入phpMyAdmin之後，請按下"使用者"進入此頁面，本次要修改root帳號是**主機位置在localhost的root帳號**，請按下**"修改權限"**，或紅框圈起來的這一行，勾選之後按下**"執行"**就能修改該帳號的權限了  
 
 **Q：**畫面中有其他root帳號，那其他root也有管理員權限嗎 ? 怎麼不處裡 ?   
+**A：** 在寫這章節時，我實驗了好幾次，但是每次把root帳號刪除掉就會出現錯誤訊息，而且改了下面章節的config.inc.php還是沒用，最後實驗的原因是**你必須有root管理員權限才能刪除帳號，如果刪除所有root帳號，將無人有權限登入後台**，所以我目前的作法是，**先修改其中一個root，確定此帳號有辦法運作，再刪除其他不安全的帳號，確保此root是唯一一組管理員**
 
 **3. 確認root帳號是否擁有全域權限**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_3.JPG)
