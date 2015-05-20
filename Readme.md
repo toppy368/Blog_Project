@@ -123,8 +123,10 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 把上面其他帳號打勾好之後，在**"刪除選中的使用者"**的選項打勾，此時會出現警語：  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_3.JPG)  
-警語內容：
-**您正要刪除**(**DESTROY**)**一個完整的資料庫！**
+警語內容：  
+**您正要刪除**(**DESTROY**)**一個完整的資料庫！**  
 **您確定要執行 "DROP DATABASE"？**
 
-請按下**"確定"**，回到使用者頁面，並按下左下角的**"執行"**
+請按下**"確定"**，回到使用者頁面
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_2.JPG) 
+確定上面的**帳號勾選無誤**，且**刪除使用者**的選項也勾選無誤後，請按下左下角的**執行**，**刪除**勾選的帳號
