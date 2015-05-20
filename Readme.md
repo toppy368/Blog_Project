@@ -29,7 +29,7 @@ XAMPP for Windows v5.6.8 (已停用)
 ###MySQL 帳號密碼
 
 帳號：<初始設定，等SQL章節寫完會填入帳密> 
-密碼：<初始設定，等SQL章節寫完會填入帳密>
+密碼：<初始設定，等SQL章節寫完會填入帳密> Es6LXSXEm6r96wRN
 編碼：UTF-8
 
 帳號密碼等SQL章節完成之後，會把設定的帳密填入上方欄位，詳細的使用說明請參考SQL章節
@@ -49,18 +49,18 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 雖然GitHub有Commit功能，可以追蹤程式碼的變化，不過我還是會每行寫註解，幫助大家了解每一行含式的功能是做什麼用的
 
 ##SQL 相關
-路徑：http://localhost/phpmyadmin/  
+路徑：http://localhost/phpMyAdmin/  
 
-直接把路徑網址複製到瀏覽器上，就能進入phpmyadmin登入畫面  
+直接把路徑網址複製到瀏覽器上，就能進入phpMyAdmin登入畫面  
 
-一般來說，通常會由伺服器後台(參見註解說明)設定SQL帳號密碼，但WAMP則是要求從phpmyadmin設定，所以比較麻煩，下面將說明如何從phpmyadmin設定SQL的root帳密  
+一般來說，通常會由伺服器後台(參見註解說明)設定SQL帳號密碼，但WAMP則是要求從phpMyAdmin設定，所以比較麻煩，下面將說明如何從phpMyAdmin設定SQL的root帳密  
 
 ###註解：
-1. 各WAMP系統的SQL帳密申請方式不同，如Appserv(已停止開發)是透過安裝軟體的指示設定phpmyadmin、xampp是透過localhost根目錄的安全選項來設定SQL帳密
+1. 各WAMP系統的SQL帳密申請方式不同，如Appserv(已停止開發)是透過安裝軟體的指示設定phpMyAdmin、xampp是透過localhost根目錄的安全選項來設定SQL帳密
 2. 虛擬主機則是依照主機商指示(E-mail內含帳密)或cpanel(主機商網站後台之一)的SQL的帳密設定來新增帳號與權限
 
 ###初始設定：修改 root 密碼
-**1. 進入phpmyadmin後台**  
+**1. 進入phpMyAdmin後台**  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_head.JPG)
 
 一進去會直接看到錯誤訊息：**您的設定檔當中使用了** (**無設定密碼的 root**) **的設定，該設定是 MySQL 預設的管理帳號。若您繼續使用預設 MySQL 管理帳號執行伺服器，可能會導致伺服器被入侵，強烈建議您設定管理者帳號 'root' 的密碼以避免這個安全性的漏洞。**  
@@ -83,18 +83,20 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_4.JPG)  
 頁面捲到最下面，有兩個表單，第一個表單是**修改密碼**，這個表單是**只能修改密碼的欄位**，另一個表單**能修改帳號與密碼**，如果你想**新增使用者**請填這個表單  
 
-填寫"修改登入資訊/複製使用者"表單時，帳號我這裡一樣是root(**參見Tips**)，主機位置請選擇**"本機"**，欄位請填寫**localhost**，再設定密碼，而無論上面的**"修改密碼"**表單或下面的**"修改使用者/複製使用者"**表單，密碼欄就跟一般申請帳號一樣，需要輸入兩組密碼，而phpmyadmin則多了一組產生器，可以產生複雜的強密碼(理論上安全性比較高)，不過需要注意一點，一旦按下了**產生**，你自己輸入的密碼就會被產生器取代，而產生器旁面會顯示產生出來的密碼，**請將設定好的密碼抄下來妥善保存或背起來，待會修改congig.inc.php會用到**  
+填寫"修改登入資訊/複製使用者"表單時，帳號我這裡一樣是root(**參見Tips**)，主機位置請選擇**"本機"**，欄位請填寫**localhost**，再設定密碼，而無論上面的**"修改密碼"**表單或下面的**"修改使用者/複製使用者"**表單，密碼欄就跟一般申請帳號一樣，需要輸入兩組密碼，而phpMyAdmin則多了一組產生器，可以產生複雜的強密碼(理論上安全性比較高)，不過需要注意一點，一旦按下了**產生**，你自己輸入的密碼就會被產生器取代，而產生器旁面會顯示產生出來的密碼，**請將設定好的密碼抄下來妥善保存或背起來，待會修改congig.inc.php會用到**  
 
 Tips：因為root是預設帳號，因此有可能有不肖人士會不斷用root這組帳號去測你的管理員密碼，所以有些人可能會設定別組帳號，但權限一樣是root
 
 **5. ERROR**
+555
+錯誤訊息：**1045 - Access denied for user 'root'@'localhost'** (**using password: NO**) 
+一旦設定完成之後，會顯示錯誤訊息，原因是phpMyAdmin已幫我設定好了root帳號，但帳號跟預設在congig.inc.php設定檔的初始設定不同，所以會出現錯誤，將新密碼填入該檔案就OK了 ! 
 
-
-**8. 開啟phpmyadmin根目錄**
+**8. 開啟phpMyAdmin根目錄**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/config.inc_1.jpg)  
-WAMP的phpmyadmin資料夾在此目錄下：C:\wamp\apps\phpmyadmin4.1.14  
+WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14  
 
-在任何WAMP伺服器中，管理SQL的後台為phpmyadmin，而config.inc.php就存在phpmyadmin資料夾中，請找到該資料夾才能找到該檔案  
+在任何WAMP伺服器中，管理SQL的後台為phpMyAdmin，而config.inc.php就存在phpMyAdmin資料夾中，請找到該資料夾才能找到該檔案  
 
 **9. 開啟並修改congig.inc.php設定檔**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/config.inc_2.jpg)  
