@@ -149,4 +149,6 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 之後按下**"使用者"**，就會出現這個畫面
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_5.JPG)
-確認帳號只剩下我這一組
+確認帳號只剩下我這一組位於localhost的root帳號之後，所有設定root帳號密碼及刪除其他帳號的動作都完成了 !   
+
+如果大家還是不放心，可以重新進入phpMyAdmin，應該是可以正常運作才對，SQL章節**修改root密碼**的**所有步驟**都完成了 ! 本章節到此結束，下一章將說明SQL檔的匯入匯出  
