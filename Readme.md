@@ -113,4 +113,18 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 **10. 回到phpMyAdmin使用者頁面，檢查root帳號是否已設定密碼**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_1.JPG)  
-回到phpMyAdmin頁面，確定能正常進入後台之後，按下"使用者"回到權限管理頁面，確定root帳號的密碼變成"有"，確定上面把root設定密碼的操作正確無誤
+回到phpMyAdmin頁面，確定能正常進入後台之後，按下"使用者"回到權限管理頁面，確定root帳號的密碼變成"有"，確定上面把root設定密碼的操作正確無誤  
+
+**最後一個帳號確定有密碼，因此予以保留**
+
+**11. 刪除其他使用者(包含root)**
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_2.JPG)  
+接下來這個步驟是倒數第二步了，這裡要解決第2步的疑問，因為只有最後一個主機位置在localhost帳號有設定密碼，所以我打算**刪除其他帳號，只保留有密碼的root**  
+
+把上面其他帳號打勾好之後，在**"刪除選中的使用者"**的選項打勾，此時會出現警語：  
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_3.JPG)  
+警語內容：
+**您正要刪除**(**DESTROY**)**一個完整的資料庫！**
+**您確定要執行 "DROP DATABASE"？**
+
+請按下**"確定"**，回到使用者頁面，並按下左下角的**"執行"**
