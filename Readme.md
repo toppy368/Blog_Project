@@ -96,7 +96,7 @@ Tips：因為root是預設帳號，因此有可能有不肖人士會不斷用roo
 **5. ERROR**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_5.JPG)  
 錯誤訊息：**1045 - Access denied for user 'root'@'localhost'** (**using password: NO**) 
-一旦設定完成之後，會顯示錯誤訊息，原因是phpMyAdmin已幫我設定好了root帳號，但帳號跟預設在congig.inc.php設定檔的初始設定不同，所以會出現錯誤，將新密碼填入該檔案就OK了 ! 
+一旦設定完成之後，底下root無密碼的提示會消失，但是重新整理頁面會顯示另一組錯誤訊息，原因是phpMyAdmin已幫我設定好了root帳號，但帳號跟預設在congig.inc.php設定檔的初始設定不同，所以會出現錯誤，將新密碼填入該檔案就OK了 ! 
 
 
 **8. 開啟phpMyAdmin根目錄**
@@ -143,4 +143,7 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 
 **12. 完成設定**
-警語：
+<圖檔擺放處>
+警語：1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 #1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+此時會出現警語，但這警語按一下就會關閉，
