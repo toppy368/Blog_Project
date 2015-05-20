@@ -27,9 +27,9 @@ XAMPP for Windows v5.6.8 (已停用)
 
 ###MySQL 帳號密碼
 
-帳號：root 
-密碼：Es6LXSXEm6r96wRN
-編碼：UTF-8
+帳號：root  
+密碼：Es6LXSXEm6r96wRN  
+編碼：UTF-8  
 
 以上資訊是本次開發端的phpMyAdmin帳密，不過看過SQL檔似乎沒有寫入這行限制，因此大家能自行設定root帳號，詳情請參考**SQL相關**章節
 
