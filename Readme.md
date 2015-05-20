@@ -111,4 +111,6 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 第35行的**['host']**，等號右邊請修改成**'localhost';**  
 第40行的**[AllowNoPassword]**，等號右邊請設定為**false;**作用為**關閉**此功能(不過剛才經實驗過，無論true或false，都不會要求輸入帳號密碼的視窗)  
 
-**10. 回到phpMyAdmin使用者頁面，刪除其他帳號**
+**10. 回到phpMyAdmin使用者頁面，檢查root帳號是否已設定密碼**
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_1.JPG)  
+回到phpMyAdmin頁面，確定能正常進入後台之後，按下"使用者"回到權限管理頁面，確定root帳號的密碼變成"有"，確定上面把root設定密碼的操作正確無誤
