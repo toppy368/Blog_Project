@@ -148,5 +148,5 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 此時會出現警語，但這警語按一下就會關閉，而且重新整理也沒出現異常  
 
 之後按下**"使用者"**，就會出現這個畫面
-<圖片擺放區>
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_5.JPG)
 確認帳號只剩下我這一組
