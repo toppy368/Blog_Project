@@ -101,10 +101,14 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 **9. 開啟並修改congig.inc.php設定檔**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/config.inc_2.jpg)  
 
-請透過搜尋方式找到並修改這幾行：
-**藍色部分**
-第32行的**['uset']**，等號右邊請填寫你的root帳號(如果你有更名的話)，帳號請用單引號包起來，這裡設定的是**'root';**
-第33行的**['password']**，等號右邊請填寫你root的**密碼**，**一旦遺失密碼，整個SQL資料庫就無法登入**，請把你抄下來的密碼填入此欄位，這裡填寫的是'Es6LXSXEm6r96wRN';
+請透過搜尋方式找到並修改這幾行：  
+
+**藍色部分**  
+第32行的**['uset']**，等號右邊請填寫你的root帳號(如果你有更名的話)，帳號請用單引號包起來，這裡設定的是**'root';**  
+第33行的**['password']**，等號右邊請填寫你root的**密碼**，**一旦遺失密碼，整個SQL資料庫就無法登入**，請把你抄下來的密碼填入此欄位，這裡填寫的是'Es6LXSXEm6r96wRN';  
+
 **橘色部分**  
 第35行的**['host']**，等號右邊請修改成**'localhost';**  
-第40行的**[AllowNoPassword]**，等號右邊請設定為**false;**作用為**關閉**此功能  
+第40行的**[AllowNoPassword]**，等號右邊請設定為**false;**作用為**關閉**此功能(不過剛才經實驗過，無論true或false，都不會要求輸入帳號密碼的視窗)  
+
+**10. **
