@@ -144,6 +144,9 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 **12. 完成設定**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_4.JPG)  
-警語：1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 #1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+警語：**1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 #1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1**  
+此時會出現警語，但這警語按一下就會關閉，而且重新整理也沒出現異常  
 
-此時會出現警語，但這警語按一下就會關閉，
+之後按下**"使用者"**，就會出現這個畫面
+<圖片擺放區>
+確認帳號只剩下我這一組
