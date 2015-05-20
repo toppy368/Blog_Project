@@ -77,7 +77,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 **3. 確認root帳號是否擁有全域權限**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_3.JPG)  
-
+請確定你要修改的帳號是否正確 ? 這次要修改的是**'root'@'localhost'**這組帳號，表示是這台機器的**root管理員帳號**，如果沒錯，請檢查權限是否全選 ? 如果有問題，請按照圖片指示修改權限，如果沒問題，請將頁面往下轉到修改密碼的地方
 
 **4. 修改root密碼**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_4.JPG)
