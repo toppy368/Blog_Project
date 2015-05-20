@@ -66,10 +66,14 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 一進去會直接看到錯誤訊息：**您的設定檔當中使用了** (**無設定密碼的 root**) **的設定，該設定是 MySQL 預設的管理帳號。若您繼續使用預設 MySQL 管理帳號執行伺服器，可能會導致伺服器被入侵，強烈建議您設定管理者帳號 'root' 的密碼以避免這個安全性的漏洞。**  
 因此必須修改root密碼以策安全  
 
+註解：**root**為SQL伺服器預設的**管理員帳號**，這個帳號持有**最高權限**，以網路遊戲來說，你就是代表**"官方"**了(類似GM，搞不好比GM還大)，因此請保護好這組帳號
 
 **2. 進入使用者頁面，選擇"修改root權限"**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_2.JPG)  
-主機為localhost的root帳號
+進入phpMyAdmin之後，請按下"使用者"進入此頁面，本次要修改root帳號是**主機位置在localhost的root帳號**，請按下**"修改權限"**，或紅框圈起來的這一行，勾選之後按下**"執行"**就能修改該帳號的權限了  
+
+**Q：**那大家應該會提出疑問，其他root不也有管理員權限嗎 ? 怎麼不處裡 ?   
+
 
 **3. 確認root帳號是否擁有全域權限**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_3.JPG)
