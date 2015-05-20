@@ -88,7 +88,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 Tips：因為root是預設帳號，因此有可能有不肖人士會不斷用root這組帳號去測你的管理員密碼，所以有些人可能會設定別組帳號，但權限一樣是root
 
 **5. ERROR**
-555
+<請填入圖片網址>
 錯誤訊息：**1045 - Access denied for user 'root'@'localhost'** (**using password: NO**) 
 一旦設定完成之後，會顯示錯誤訊息，原因是phpMyAdmin已幫我設定好了root帳號，但帳號跟預設在congig.inc.php設定檔的初始設定不同，所以會出現錯誤，將新密碼填入該檔案就OK了 ! 
 
