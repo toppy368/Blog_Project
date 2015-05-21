@@ -197,5 +197,5 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_4A.JPG)
 
 **4B. 自訂匯出**
-![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_4A.JPG)
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_4B.JPG)
 
