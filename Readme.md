@@ -59,6 +59,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 如果只透過HTML或網頁設計丙級所設計出來的網站，也許只用到了HTML跟CSS跟少量的繪圖軟體(PhotoImpact)，但是HTML只能建立簡易表單，**按下"送出"後，文件卻無法送出**，因為**資料沒有儲存的地方，所以按了也無法送出資料**  
 
+如果網友在討論版透過HTML輸入表單後，留言能顯示在網頁上，那一定得透過程式碼儲存(**參見Tips第1項**)，在本專案中**你在HTML表單輸入資料後，會透過PHP傳到SQL後端伺服器**(參見Tips第2項)，部分網站可能會用到ASP.NET，可達到同樣的效果  
 
 **Tips：**  
 1. 建議把此機制想成Google Docs，填好內容按下"送出"後，Google Docs的主人可透過Docs的試算表看到你的回應  
