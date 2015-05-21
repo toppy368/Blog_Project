@@ -192,3 +192,10 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_3.JPG)
 請按下右邊的資料庫，本專案的資料庫名稱為"blog_project"，選中之後，會顯示裏頭的資料表，接下來請按下"匯出"，匯出資料庫
 
+####4. 匯出選項
+**4A. 快速匯出**
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_4A.JPG)
+
+**4B. 自訂匯出**
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_4A.JPG)
+
