@@ -59,7 +59,6 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 如果只透過HTML或網頁設計丙級所設計出來的網站，也許只用到了HTML跟CSS跟少量的繪圖軟體(PhotoImpact)，但是HTML只能建立簡易表單，**按下"送出"後，文件卻無法送出**，因為**資料沒有儲存的地方，所以按了也無法送出資料**  
 
-如果網友在討論版透過HTML輸入表單後，留言能顯示在網頁上，那一定得透過程式碼儲存(**參見Tips**)，在本專案中**你在HTML表單輸入資料後，會透過PHP傳到SQL後端伺服器**(參見Tips第二項)，部分網站可能會用到ASP.NET，可達到同樣的效果  
 
 **Tips：**  
 1. 建議把此機制想成Google Docs，填好內容按下"送出"後，Google Docs的主人可透過Docs的試算表看到你的回應  
@@ -169,9 +168,9 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 ###透過phpMyAdmin匯出SQL檔(備份成 *.sql檔)
 舊文網址：[WordPress 多種方式的網誌備份教學<<toppy368的研究書房] (http://www.toppy368.tw/archives/1437)  
-我之前在我的Blog寫過備份方法，雖然是針對Wordpress的筆記文，但只要是透過php+SQL執行的網站或架站軟體都可以用此方式，比如說最近很知名的CMS(內容管理系統)架站軟體，如**部落格**為主的 [**Wordpress**] (https://tw.wordpress.org/)  或**論壇**為主的 [**Discuz**] (http://www.discuz.net/forum.php) 或**商業網站**為主的 [**Joomla!**] (http://www.joomla.org.tw/) 以上這些都可以使用本方法備份SQL資料庫  
+我之前在我的Blog寫過備份方法，雖然是針對Wordpress的筆記文，但只要是基於SQL語法運作的網站或採用SQL資料庫運作的 [內容管理系統 CMS] (http://zh.wikipedia.org/zh-tw/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F) 都可以利用此方法備份網站資料庫為SQL檔  
 
-本專案是自己用PHP+SQL刻出類似Wordpress的簡易型Blog網站，  
+ 
 
 ####1. 進入phpMyAdmin
 
