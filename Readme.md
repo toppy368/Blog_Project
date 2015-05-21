@@ -154,3 +154,8 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 如果大家還是不放心，可以重新進入phpMyAdmin，應該是可以正常運作才對，SQL章節**修改root密碼**的**所有步驟**都完成了 !   
 
 **本章節到此結束，下一章將說明SQL檔的匯入匯出**  
+
+###透過phpMyAdmin匯出SQL檔(備份成 *.sql檔)
+舊文網址：[WordPress 多種方式的網誌備份教學<<toppy368的研究書房] (http://www.toppy368.tw/archives/1437)  
+我之前在我的Blog寫過備份方法，雖然是針對Wordpress的筆記文，但只要是透過php+SQL執行的網站或架站軟體都可以用此方式，比如說最近很知名的CMS(內容管理系統)架站軟體，如部落格起家的 [Wordpress] (https://tw.wordpress.org/) (部落格架站後台管理系統) 或 [Discuz] (http://www.discuz.net/forum.php) (論壇管理系統) 或 [Joomla!] (http://www.joomla.org.tw/)  
+
