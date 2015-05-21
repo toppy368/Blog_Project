@@ -193,6 +193,9 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 請按下右邊的資料庫，本專案的資料庫名稱為"blog_project"，選中之後，會顯示裏頭的資料表，接下來請按下"匯出"，匯出資料庫
 
 ####4. 匯出選項
+按下匯出之後，請檢查你要匯出的資料庫是否正確，本專案的資料庫檔案為"blog_project"  
+匯出選項區分為**快速匯出**跟**自訂匯出**選項，以下將針對這些選項來說明  
+
 **4A. 快速匯出**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_4A.JPG)
 
