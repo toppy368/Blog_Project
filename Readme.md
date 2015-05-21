@@ -167,10 +167,20 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 **本章節到此結束，下一章將說明SQL檔的匯入匯出**  
 
+
+###透過phpMyAdmin匯入SQL檔
+
+####1.進入phpMyAdmin主畫面
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_import_1.JPG)
+
+####2. 新增資料庫
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_import_2.JPG)
+可用此SQL指令替代：**CREATE DATABASE 資料庫名稱；**
+
+
 ###透過phpMyAdmin匯出SQL檔(備份成 *.sql檔)
 舊文網址：[WordPress 多種方式的網誌備份教學<<toppy368的研究書房] (http://www.toppy368.tw/archives/1437)  
 我之前在我的Blog寫過備份方法，雖然是針對Wordpress的筆記文，但只要是基於SQL語法運作的網站或採用SQL資料庫運作的 [內容管理系統 CMS] (http://zh.wikipedia.org/zh-tw/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F) 都可以利用此方法備份網站資料庫為SQL檔  
-
  
 
 ####1. 進入phpMyAdmin主頁面
