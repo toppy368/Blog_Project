@@ -173,6 +173,12 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
  
 
-####1. 進入phpMyAdmin
+####1. 進入phpMyAdmin主頁面
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_1.JPG)
+這裡假設大家已經在自己的電腦裡安裝好伺服器軟體或WAMP架構並可進入phpMyAdmin，或申請好虛擬主機並設定好root帳密者，如果無法進入，請看前面章節  
 
-這裡假設大家都已經有資料庫
+**請大家先以root帳號登入phpMyadmin首頁**，確定正確登入再進行第二步
+
+####2. 點選要備份的資料庫
+<圖片擺放處>
+以上次phpMyAdmin的結構說明
