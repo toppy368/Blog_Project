@@ -62,7 +62,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 2. 虛擬主機則是依照主機商指示(E-mail內含帳密)或cpanel(主機商網站後台之一)的SQL的帳密設定來新增帳號與權限
 
 
-###初始設定：修改 root 密碼
+###初始設定：修改phpMyAdmin預設的root密碼
 **1. 進入phpMyAdmin後台**  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_head.JPG)
 
