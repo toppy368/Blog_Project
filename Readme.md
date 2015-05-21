@@ -198,8 +198,11 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 新版phpMyAdmin的**匯出選項**區分為**"快速"**及**"自訂"**兩種，以下將針對這兩種選項說明
 
 **4A. 快速匯出**
-![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_4A.JPG)
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_4A.JPG)  
+快速匯出只要檢查資料庫名稱是否正確，再確認格式是否為SQL(下載為 .sql 檔)，之後按下執行，就會跳出下載畫面，直接下載.sql檔就好
 
 **4B. 自訂匯出**
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_4B.JPG)
+自訂匯出選項可以讓你自訂匯出的資料表、檔案編碼等等，你可以檢查資料表是否全選(如果漏選可能會造成網站異常)，還有檔案編碼是否正確等等(匯出的編碼要與匯入的格式相同)  
 
+確定沒問題，就跟快速匯出一樣，畫面移動到最下方，按下**"執行"**，下載.sql檔就完成了  
