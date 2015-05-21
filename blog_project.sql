@@ -7,7 +7,7 @@
 -- 伺服器版本: 5.6.17
 -- PHP 版本： 5.5.12
 -- 授權條款：GNU General Public License v2.0 
--- 關於授權條款的詳情，請查閱根目錄LICENSE.txt
+-- 關於授權條款的詳情，請查閱根目錄LICENSE.txt 
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
