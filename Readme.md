@@ -177,8 +177,11 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 ####2. 新增資料庫
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_import_2.JPG)
 可用此SQL指令替代：**CREATE DATABASE 資料庫名稱；**  
-請到左邊資料庫選單中選擇"新增"選項，然後到右邊紅框框起來的地方，**最左邊第一格**請輸入你想新增的**資料庫名稱**、**第二項**請選擇**資料庫編碼**，如果你要匯入的資料庫是UTF-8，請同樣選擇UTF-8的編碼，Big5或其他編碼也請選擇對應的編碼，之後請按下**建立**建立資料庫
+請到左邊資料庫選單中選擇"新增"選項，然後到右邊紅框框起來的地方，**最左邊第一格**請輸入你想新增的**資料庫名稱**、**第二項**請選擇**資料庫編碼**，考慮到使用者可能是不同國籍的人，為了語言相容性，所以本專案的資料庫設定成**utf8_unicode_ci**(**參見註解**)，**想採用utf8mb4的開發者，請將編碼資料庫設定為utf8mb4_unicode**  
 
+註解：
+1. 在還沒有Unicode概念時，每個電腦系統使用各自的編碼語言，比方說台灣的正體中文使用Big5、日本使用Shift_JIS、中國大陸簡體中文使用GB18030及GB2312、英文使用的是[ASCII] (http://zh.wikipedia.org/zh-tw/ASCII)，不同的語言，2進位代碼不同，如果編碼設錯，瀏覽器讀不出來將造成 [亂碼] (http://zh.wikipedia.org/zh-tw/%E4%BA%82%E7%A2%BC)，後來為了將這些語言統一才推出 [Unicode編碼] (http://zh.wikipedia.org/zh-tw/Unicode) ，可在同頁面上顯示不同語言的文字
+2. phpMyAdmin在5.5以後開始支援utf8mb4編碼，而 [Wordpress也採用此編碼] (https://tw.wordpress.org/2015/04/29/wordpress-4-2/) ，不過我目前還是以UTF-8為主(想採用utf8mb4的開發者，請將編碼資料庫設定為utf8mb4_unicode)
 
 ###透過phpMyAdmin匯出SQL檔(備份成 *.sql檔)
 舊文網址：[WordPress 多種方式的網誌備份教學<<toppy368的研究書房] (http://www.toppy368.tw/archives/1437)  
