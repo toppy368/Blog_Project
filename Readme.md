@@ -157,5 +157,5 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 ###透過phpMyAdmin匯出SQL檔(備份成 *.sql檔)
 舊文網址：[WordPress 多種方式的網誌備份教學<<toppy368的研究書房] (http://www.toppy368.tw/archives/1437)  
-我之前在我的Blog寫過備份方法，雖然是針對Wordpress的筆記文，但只要是透過php+SQL執行的網站或架站軟體都可以用此方式，比如說最近很知名的CMS(內容管理系統)架站軟體，如**部落格起家的 [Wordpress] (https://tw.wordpress.org/) ** 或**論壇起家的 [Discuz] (http://www.discuz.net/forum.php) (論壇管理系統)** 或 [Joomla!] (http://www.joomla.org.tw/)**  
+我之前在我的Blog寫過備份方法，雖然是針對Wordpress的筆記文，但只要是透過php+SQL執行的網站或架站軟體都可以用此方式，比如說最近很知名的CMS(內容管理系統)架站軟體，如**部落格**起家的 [**Wordpress**] (https://tw.wordpress.org/) ** 或論壇起家的 [Discuz] (http://www.discuz.net/forum.php) (論壇管理系統)** 或 [Joomla!] (http://www.joomla.org.tw/)  
 
