@@ -57,7 +57,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 
 
-####註解 1：
+
 
 
 ###初始設定：修改phpMyAdmin預設的root密碼
@@ -72,7 +72,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 因為root是管理員權限，預設沒有設定密碼，因此必須修改root密碼以策安全(**參見註解第3條**)  
 一般來說，通常會由伺服器後台(**參見註解1、2說明**)設定SQL帳號密碼，但WAMP則是要求從phpMyAdmin設定，所以比較麻煩，本章節將說明如何從phpMyAdmin設定SQL的root帳密  
 
-註解：
+####註解說明：   
 1. 各WAMP系統的SQL帳密申請方式不同，如Appserv(已停止開發)是透過安裝軟體的指示設定phpMyAdmin、xampp是透過localhost根目錄的安全選項來設定SQL帳密  
 2. 虛擬主機則是依照主機商指示(E-mail內含帳密)或cpanel(主機商網站後台之一)的SQL的帳密設定來新增帳號與權限   
 3. **root**為SQL伺服器預設的**管理員帳號**，這個帳號持有**最高權限**，以網路遊戲來說，你就是代表**"官方"**了(類似GM，搞不好比GM還大)，因此請保護好這組帳號  
