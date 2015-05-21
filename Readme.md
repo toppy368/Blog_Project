@@ -8,6 +8,8 @@
 ##授權方式
 本專案選用的授權方式為GNU General Public License v2.0，詳情請訪問本目錄的LICENSE.txt檔案
 
+此段說明已寫在本專案的所有PHP、HTML檔，在Body標籤後面、H1標題前面以註解說明，而SQL檔則寫在主機資訊的註解，位於第9與第10行
+
 
 ##開發環境
 作業系統：Windows 7 家用進階版
