@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主機: localhost
--- 產生時間： 2015 �?05 ??21 ??12:32
+-- 產生時間： 2015 �?05 ??21 ??14:27
 -- 伺服器版本: 5.6.17
 -- PHP 版本： 5.5.12
 
@@ -28,10 +28,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `userdata` (
   `uid` int(11) NOT NULL,
-  `account` char(15) COLLATE utf8_bin NOT NULL,
-  `password` char(20) COLLATE utf8_bin NOT NULL,
+  `account` char(15) COLLATE utf8_unicode_ci NOT NULL,
+  `password` char(20) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`uid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
