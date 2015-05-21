@@ -179,6 +179,9 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 **請大家先以root帳號登入phpMyadmin首頁**，確定正確登入再進行第二步
 
-####2. 點選要備份的資料庫
-<圖片擺放處>
-以上次phpMyAdmin的結構說明
+####2. phpMyAdmin資料庫介面說明
+![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_Backup_2.JPG)
+先說明資料庫的介面好了：  
+左邊紅框顯示的是資料庫選單，一台SQL主機可能有好幾個資料庫，包含運作此資料庫的必要資料庫在內，你可以在此選擇你想備份的資料庫  
+右邊上面紅框框起來的是功能選單，按下SQL可以下達SQL指令、也有匯出資料或匯入資料或搜尋等功能
+右邊中間是資料表顯示區，你選中資料庫之後，資料表顯示區會顯示這個資料庫有幾張資料表等內容，空的資料庫也會顯示
