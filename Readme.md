@@ -63,7 +63,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 
 ###初始設定：修改phpMyAdmin預設的root密碼
-**1. 進入phpMyAdmin後台**  
+####1. 進入phpMyAdmin後台  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_head.JPG)
 
 一進去會直接看到錯誤訊息：**您的設定檔當中使用了** (**無設定密碼的 root**) **的設定，該設定是 MySQL 預設的管理帳號。若您繼續使用預設 MySQL 管理帳號執行伺服器，可能會導致伺服器被入侵，強烈建議您設定管理者帳號 'root' 的密碼以避免這個安全性的漏洞。**  
@@ -72,7 +72,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 註解：**root**為SQL伺服器預設的**管理員帳號**，這個帳號持有**最高權限**，以網路遊戲來說，你就是代表**"官方"**了(類似GM，搞不好比GM還大)，因此請保護好這組帳號
 
 
-**2. 進入使用者頁面，選擇"修改root權限"**
+####2. 進入使用者頁面，選擇"修改root權限"  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_2.JPG)  
 進入phpMyAdmin之後，請按下"使用者"進入此頁面，本次要修改root帳號是**主機位置在localhost的root帳號**，請按下**"修改權限"**，或紅框圈起來的這一行，勾選之後按下**"執行"**就能修改該帳號的權限了  
 
@@ -80,11 +80,11 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 **A：** 在寫這章節時，我實驗了好幾次，但是每次把root帳號刪除掉就會出現錯誤訊息，而且改了下面章節的config.inc.php還是沒用，最後實驗的原因是**你必須有root管理員權限才能刪除帳號，如果刪除所有root帳號，將無人有管理員權限，也無權限登入後台**(當然就無法編輯帳號權限了)，所以我目前的作法是，**先修改其中一個root，確定此帳號有辦法運作，再刪除其他不安全的帳號，確保此root是唯一一組管理員**
 
 
-**3. 確認root帳號是否擁有全域權限**
+####3. 確認root帳號是否擁有全域權限  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_3.JPG)  
 請確定你要修改的帳號是否正確 ? 這次要修改的是**'root'@'localhost'**這組帳號，表示是這台機器的**root管理員帳號**，如果沒錯，請檢查權限是否全選 ? 如果有問題，請按照圖片指示修改權限，如果沒問題，請將頁面往下轉到修改密碼的地方
 
-**4. 修改root密碼**
+####4. 修改root密碼
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_4.JPG)  
 頁面捲到最下面，有兩個表單，第一個表單是**修改密碼**，這個表單是**只能修改密碼的欄位**，另一個表單**能修改帳號與密碼**，如果你想**新增使用者**請填這個表單  
 
@@ -93,20 +93,20 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 Tips：因為root是預設帳號，因此有可能有不肖人士會不斷用root這組帳號去測你的管理員密碼，所以有些人可能會設定別組帳號，但權限一樣是root
 
 
-**5. ERROR**
+####5. ERROR  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_5.JPG)  
 錯誤訊息：**1045 - Access denied for user 'root'@'localhost'** (**using password: NO**) 
 一旦設定完成之後，底下root無密碼的提示會消失，但是重新整理頁面會顯示另一組錯誤訊息，原因是phpMyAdmin已幫我設定好了root帳號，但帳號跟預設在congig.inc.php設定檔的初始設定不同，所以會出現錯誤，將新密碼填入該檔案就OK了 ! 
 
 
-**8. 開啟phpMyAdmin根目錄**
+####8. 開啟phpMyAdmin根目錄
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/config.inc_1.jpg)  
 WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14  
 
 在任何WAMP伺服器中，管理SQL的後台為phpMyAdmin，而config.inc.php就存在phpMyAdmin資料夾中，請找到該資料夾才能找到該檔案  
 
 
-**9. 開啟並修改congig.inc.php設定檔**
+####9. 開啟並修改congig.inc.php設定檔
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/config.inc_2.jpg)  
 
 請透過搜尋方式找到並修改這幾行：  
@@ -120,14 +120,14 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 第40行的**[AllowNoPassword]**，等號右邊請設定為**false;**作用為**關閉**此功能(不過剛才經實驗過，無論true或false，都不會要求輸入帳號密碼的視窗)  
 
 
-**10. 回到phpMyAdmin使用者頁面，檢查root帳號是否已設定密碼**
+####10. 回到phpMyAdmin使用者頁面，檢查root帳號是否已設定密碼  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_1.JPG)  
 回到phpMyAdmin頁面，確定能正常進入後台之後，按下"使用者"回到權限管理頁面，確定root帳號的密碼變成"有"，確定上面把root設定密碼的操作正確無誤  
 
 **最後一個帳號確定有密碼，因此予以保留**
 
 
-**11. 刪除其他使用者(包含root)**
+####11. 刪除其他使用者(包含root)  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_2.JPG)  
 接下來這個步驟是倒數第二步了，這裡要解決第2步的疑問，因為只有最後一個主機位置在localhost帳號有設定密碼，所以我打算**刪除其他帳號，只保留有密碼的root**  
 
@@ -142,7 +142,7 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 確定上面的**帳號勾選無誤**，且**刪除使用者**的選項也勾選無誤後，請按下左下角的**執行**，**刪除**勾選的帳號
 
 
-**12. 完成設定**  
+####12. 完成設定  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/Delete_root_4.JPG)  
 警語：**1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 #1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1**  
 此時會出現警語，但這警語按一下就會關閉，而且重新整理也沒出現異常  
