@@ -62,7 +62,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 2. 虛擬主機則是依照主機商指示(E-mail內含帳密)或cpanel(主機商網站後台之一)的SQL的帳密設定來新增帳號與權限
 
 
-###初始設定：修改 root 密碼
+###初始設定：修改phpMyAdmin的root密碼
 **1. 進入phpMyAdmin後台**  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_head.JPG)
 
@@ -154,3 +154,6 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 如果大家還是不放心，可以重新進入phpMyAdmin，應該是可以正常運作才對，SQL章節**修改root密碼**的**所有步驟**都完成了 !   
 
 **本章節到此結束，下一章將說明SQL檔的匯入匯出**  
+
+###從phpMyAdmin匯出SQL資料庫檔
+####1. 進入phpMyadmin
