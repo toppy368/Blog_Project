@@ -25,10 +25,11 @@ XAMPP for Windows v5.6.8 (已停用)
 編碼：一律採用UTF-8
 
 
-###MySQL 帳號密碼
+###MySQL 登入資訊
 
 帳號：root  
 密碼：Es6LXSXEm6r96wRN  
+資料庫檔案：blog_project.sql  
 編碼：UTF-8  
 
 以上資訊是本次開發端的phpMyAdmin帳密，不過看過SQL檔似乎沒有寫入這行限制，因此大家能自行設定root帳號，詳情請參考**SQL相關**章節
