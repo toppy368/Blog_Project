@@ -175,7 +175,8 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 ####2. 新增資料庫
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/SQL_import_2.JPG)
-可用此SQL指令替代：**CREATE DATABASE 資料庫名稱；**
+可用此SQL指令替代：**CREATE DATABASE 資料庫名稱；**  
+請到左邊資料庫選單中選擇"新增"選項，然後到右邊紅框框起來的地方，**最左邊第一格**請輸入你想新增的**資料庫名稱**、**第二項**請選擇**資料庫編碼**，如果你要匯入的資料庫是UTF-8，請同樣選擇UTF-8的編碼，Big5或其他編碼也請選擇對應的編碼，之後請按下**建立**建立資料庫
 
 
 ###透過phpMyAdmin匯出SQL檔(備份成 *.sql檔)
