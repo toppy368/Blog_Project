@@ -46,7 +46,7 @@
 							//!$db_data：表示資料庫連接有錯誤
 							if (!$db_data) {
 								//跳出連線失敗字樣及sql錯誤訊息
-								die("<FONT COLOR='ff0000'>"."連線失敗"."</FONT>".mysql_error());
+								die(mysql_error());
 							}
 				}
 				else {
