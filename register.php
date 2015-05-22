@@ -30,27 +30,31 @@
 				$password = $_POST['password'];
 				$check_password = $_POST['check_password'];
 				
+				//將SQL連線資訊重新定義
+				$db_url = "mysql:host=localhost;dbname=blog_project";
+				$db_user = "root";
+				$db_pw = "Es6LXSXEm6r96wRN";
+				
 				//驗證密碼欄位是否相同
 				//兩組密碼欄位分別顯示成功與失敗兩組結果
 				if ($password == $check_password) {
 					//如果兩組密碼相符的話，會顯示以下字串
 					echo "密碼比對成功";
+						//透過PDO連線到phpMyAdmin
+						$db = new PDO($db_url,$db_user,$db_p);
+							//!$db：表示資料庫連接有錯誤
+							if (!$db) {
+								//跳出連線失敗字樣及sql錯誤訊息
+								die("<FONT COLOR='ff0000'>"."連線失敗"."</FONT>".mysql_error());
+							}
 				}
 				else {
 					//如果兩組密碼不相符，會顯示以下字串
 					echo "密碼比對失敗";
 				}
 				
-				//測試PDO方法
-				$db = new PDO("mysql:host=localhost;dbname=blog_project","root","Es6LXSXEm6r96wRN");
-				//如果連線資訊錯誤，會噴出mysql錯誤訊息
-				 if(!$db) {
-					 die(mysql_error());
-				 } 
-				 else {
-					 //如果成功，會顯示連線成功的訊息
-					 echo "資料庫連線成功";
-				 }
+
+
 			 ?>
 	</body>
 </html>
