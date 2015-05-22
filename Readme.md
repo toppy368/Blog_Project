@@ -56,9 +56,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 
 ##SQL 相關
-路徑：http://localhost/phpMyAdmin/  
-
-直接把路徑網址複製到瀏覽器上，就能進入phpMyAdmin登入畫面  
+每個瀏覽器的SQL登入路徑都不同，加上資料安全的疑慮，所以就不寫出登入連結了，請參考各網頁伺服器的phpMyAdmin登入方法
 
 **Q：為什麼這個專案需要SQL資料庫呢 ? **  
 **A:** 這個專案是要自己建立一個部落格後台系統，類似商業網誌如無名小站(已倒站)及痞客邦，或類似部落格架站軟體Wordpress的一種Blog系統，不過本專案不會有那麼多功能，只是想建立一個小型的Blog架站機制，練習互動式網頁語法  
@@ -76,7 +74,6 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 ####1. 進入phpMyAdmin後台  
 ![image] (https://github.com/toppy368/Blog_Project/blob/master/Readme_image/root_pw_error_head.JPG)
 
-路徑：http://localhost/phpMyAdmin/  
 直接把路徑網址複製到瀏覽器上，就能進入phpMyAdmin登入畫面  
 
 一進去會直接看到錯誤訊息：**您的設定檔當中使用了** (**無設定密碼的 root**) **的設定，該設定是 MySQL 預設的管理帳號。若您繼續使用預設 MySQL 管理帳號執行伺服器，可能會導致伺服器被入侵，強烈建議您設定管理者帳號 'root' 的密碼以避免這個安全性的漏洞。**  
