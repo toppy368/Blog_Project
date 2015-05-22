@@ -30,8 +30,8 @@ XAMPP for Windows v5.6.8 (已停用)
 
 ###MySQL 登入資訊
 
-帳號：root  
-密碼：Es6LXSXEm6r96wRN  
+帳號：<你的SQL帳號>  
+密碼：<你的SQL密碼>
 資料庫檔案：blog_project.sql  
 編碼：UTF-8  
 
