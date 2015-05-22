@@ -54,13 +54,15 @@
 					//如果兩組密碼不相符，會顯示以下字串
 					echo "<h3 />"."密碼比對失敗"."<p />";
 				}
-				//插入SQL句子並以 $statement 函數儲存
+
 				//想像中的SQL句子如下：
 				//INSERT INTO userdata (account , password) VALUES ('使用者輸入的帳號','使用者輸入的密碼');
-				//但是VALUES欄位無法直接套用POST的欄位(參見27行對應表說明)，故先以??代替在透過64行插入
+				//
+				//$db會送出INSERT INTO語句，但是VALUES欄位無法直接套用POST的欄位(參見27行對應表說明)，故採用?預留空間
+				//$db 連線指標的結果先儲存在 $statment 變數中
 				$statement = $db->("INSERT INTO userdata (account , password)"."VALUES(?,?);");
-
-
+				
+				//$statement -> execute(array($account,$password));
 			 ?>
 	</body>
 </html>
