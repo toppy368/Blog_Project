@@ -32,12 +32,25 @@
 				
 				//驗證密碼欄位是否相同
 				//兩組密碼欄位分別顯示成功與失敗兩組結果
-				IF ($password == $check_password) {
-					echo "成功";
+				if ($password == $check_password) {
+					//如果兩組密碼相符的話，會顯示以下字串
+					echo "密碼比對成功";
 				}
 				else {
-					echo "失敗";
+					//如果兩組密碼不相符，會顯示以下字串
+					echo "密碼比對失敗";
 				}
+				
+				//測試PDO方法
+				$db = new PDO("mysql:host=localhost;dbname=blog_project","root","Es6LXSXEm6r96wRN");
+				//如果連線資訊錯誤，會噴出mysql錯誤訊息
+				 if(!$db) {
+					 die(mysql_error());
+				 } 
+				 else {
+					 //如果成功，會顯示連線成功的訊息
+					 echo "資料庫連線成功";
+				 }
 			 ?>
 	</body>
 </html>
