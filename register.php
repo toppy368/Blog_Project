@@ -24,6 +24,11 @@
 				//測試PHP是否有作用
 				echo "hello world";
 				
+				//POST傳回本頁的標籤會變成 $_POST['變數名稱'];
+				//將POST的變數統一更改為 $變數名稱
+				$account = $_POST['account'];
+				$password = $_POST['password'];
+				$check_password = $_POST['check_password'];
 			 ?>
 	</body>
 </html>
