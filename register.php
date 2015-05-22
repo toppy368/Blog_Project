@@ -39,7 +39,7 @@
 				//兩組密碼欄位分別顯示成功與失敗兩組結果
 				if ($password == $check_password) {
 					//如果兩組密碼相符的話，會顯示以下字串
-					echo "密碼比對成功"."<p />";
+					echo "<h3 />"."密碼比對成功"."<p />";
 						//透過PDO連線到phpMyAdmin
 						//資料庫帳號密碼及連線資訊儲存在 $db_data 參數中
 						$db_data = new PDO($db_url,$db_user,$db_pw);
@@ -51,7 +51,7 @@
 				}
 				else {
 					//如果兩組密碼不相符，會顯示以下字串
-					echo "密碼比對失敗"."<p />";
+					echo "<h3 />"."密碼比對失敗"."<p />";
 				}
 				
 
