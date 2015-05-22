@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主機: localhost
--- 產生時間： 2015 �?05 ??22 ??14:58
+-- 產生時間： 2015 �?05 ??22 ??20:20
 -- 伺服器版本: 5.6.17
 -- PHP 版本： 5.5.12
 
@@ -19,6 +19,19 @@ SET time_zone = "+00:00";
 --
 -- 資料庫： `blog_project`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `aes_table`
+--
+
+CREATE TABLE IF NOT EXISTS `aes_table` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `account` char(15) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varbinary(255) NOT NULL,
+  PRIMARY KEY (`aid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
