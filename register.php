@@ -43,7 +43,7 @@
 					echo "<h3 />"."密碼比對成功"."<p />";
 						//透過PDO連線到phpMyAdmin
 						//資料庫帳號密碼及連線資訊儲存在 $db_data 參數中
-						$db_data = new PDO($db_url,$db_user,$db_pw);
+						$db_data = new PDO($db_url,$db_user,$db_p);
 							//如果db_data連接錯誤，會顯示PDO錯誤訊息
 							if (!$db_data){
 								echo "\nPDO::errorCode():";
