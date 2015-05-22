@@ -44,10 +44,10 @@
 						//透過PDO連線到phpMyAdmin
 						//資料庫帳號密碼及連線資訊儲存在 $db_data 參數中
 						$db_data = new PDO($db_url,$db_user,$db_pw);
-							//!$db_data：表示資料庫連接有錯誤
-							if (!$db_data) {
-								//跳出連線失敗字樣及sql錯誤訊息
-								die(mysql_error());
+							//如果db_data連接錯誤，會顯示PDO錯誤訊息
+							if (!$db_data){
+								echo "\nPDO::errorCode():";
+								print_r($db_data->errorCode()); 
 							}
 				}
 				else {
@@ -56,7 +56,7 @@
 				}
 				//SQL增加表單句型
 				//INSERT INTO userdata (account , password) VALUES ('使用者輸入的帳號','使用者輸入的密碼');
-				
+				//$sql = "INSERT INTO userdata (account , password) VALUES('"$account"', '"$password"'); "
 
 
 			 ?>
