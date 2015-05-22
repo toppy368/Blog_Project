@@ -33,8 +33,8 @@
 				//將SQL連線資訊重新定義
 				//本檔案以PDO法連線到SQL資料庫，此功能PHP5以上才支援
 				$db_url = "mysql:host=localhost;dbname=blog_project";
-				$db_user = "root";
-				$db_pw = "Es6LXSXEm6r96wRN";
+				$db_user = <your_SQL_account>;
+				$db_pw = <your_SQL_PW>;
 				
 				//驗證密碼欄位是否相同
 				//兩組密碼欄位分別顯示成功與失敗兩組結果
@@ -60,7 +60,7 @@
 				//
 				//$db會送出INSERT INTO語句，但是VALUES欄位無法直接套用POST的欄位(參見27行對應表說明)，故採用?預留空間
 				//$db 連線指標的結果先儲存在 $statment 變數中
-				$statement = $db->prepare("INSERT INTO userdata (account , password)"."VALUES(?,?);"); 
+				$statement = $db->prepare("INSERT INTO userdata (account , password)"."VALUES(?,?);");
 				
 				//透過execute，將POST欄位回傳到第63行，括弧的?欄位中
 				$statement -> execute(array($account,$password));
