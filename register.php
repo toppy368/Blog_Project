@@ -42,7 +42,7 @@
 					//如果兩組密碼相符的話，會顯示以下字串
 					echo "<h3 />"."密碼比對成功"."<p />";
 						//透過PDO連線到phpMyAdmin
-						//資料庫帳號密碼及連線資訊儲存在 $db_data 參數中
+						//資料庫帳號密碼及連線資訊儲存在 $db_data 參數中(連線指標)
 						$db_data = new PDO($db_url,$db_user,$db_pw);
 							//如果db_data連接錯誤，會顯示PDO錯誤訊息
 							if (!$db_data){
@@ -54,9 +54,11 @@
 					//如果兩組密碼不相符，會顯示以下字串
 					echo "<h3 />"."密碼比對失敗"."<p />";
 				}
-				//SQL增加表單句型
+				//插入SQL句子並以 $statement 函數儲存
+				//想像中的SQL句子如下：
 				//INSERT INTO userdata (account , password) VALUES ('使用者輸入的帳號','使用者輸入的密碼');
-				//$sql = "INSERT INTO userdata (account , password) VALUES('"$account"', '"$password"'); "
+				//但是VALUES欄位無法直接套用POST的欄位(參見27行對應表說明)，故先以??代替在透過64行插入
+				$statement = $db->("INSERT INTO userdata (account , password)"."VALUES(?,?);");
 
 
 			 ?>
