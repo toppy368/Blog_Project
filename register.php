@@ -31,6 +31,7 @@
 				$check_password = $_POST['check_password'];
 				
 				//將SQL連線資訊重新定義
+				//本檔案以PDO法連線到SQL資料庫，此功能PHP5以上才支援
 				$db_url = "mysql:host=localhost;dbname=blog_project";
 				$db_user = "root";
 				$db_pw = "Es6LXSXEm6r96wRN";
