@@ -64,6 +64,8 @@
 				
 				//透過execute，將POST欄位回傳到第63行，括弧的?欄位中
 				$statement -> execute(array($account,$password));
+				
+				
 			 ?>
 	</body>
 </html>
