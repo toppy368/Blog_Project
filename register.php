@@ -39,18 +39,19 @@
 				//兩組密碼欄位分別顯示成功與失敗兩組結果
 				if ($password == $check_password) {
 					//如果兩組密碼相符的話，會顯示以下字串
-					echo "密碼比對成功";
+					echo "密碼比對成功"."<p />";
 						//透過PDO連線到phpMyAdmin
-						$db = new PDO($db_url,$db_user,$db_p);
-							//!$db：表示資料庫連接有錯誤
-							if (!$db) {
+						//資料庫帳號密碼及連線資訊儲存在 $db_data 參數中
+						$db_data = new PDO($db_url,$db_user,$db_pw);
+							//!$db_data：表示資料庫連接有錯誤
+							if (!$db_data) {
 								//跳出連線失敗字樣及sql錯誤訊息
 								die("<FONT COLOR='ff0000'>"."連線失敗"."</FONT>".mysql_error());
 							}
 				}
 				else {
 					//如果兩組密碼不相符，會顯示以下字串
-					echo "密碼比對失敗";
+					echo "密碼比對失敗"."<p />";
 				}
 				
 
