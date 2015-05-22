@@ -62,7 +62,8 @@
 				//$db 連線指標的結果先儲存在 $statment 變數中
 				$statement = $db->("INSERT INTO userdata (account , password)"."VALUES(?,?);");
 				
-				//$statement -> execute(array($account,$password));
+				//透過execute，將POST欄位回傳到第63行，括弧的?欄位中
+				$statement -> execute(array($account,$password));
 			 ?>
 	</body>
 </html>
