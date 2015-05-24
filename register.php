@@ -36,8 +36,10 @@
 				$db_url = "mysql:host=localhost;dbname=blog_project";
 				$db_user = "<SQL帳號>";
 				$db_pw = "<SQL密碼>";
-				//SQL語句相關
+				
+				//儲存SQL句子的參數，初始化定義，設定為"空值"，也就是null
 				$prepare = "null";
+				$db = "null";
 				
 				//驗證密碼欄位是否相同
 				//兩組密碼欄位分別顯示成功與失敗兩組結果
