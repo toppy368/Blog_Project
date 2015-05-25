@@ -74,26 +74,26 @@
 				//想像中的SQL句子如下：
 				//INSERT INTO <資料表名稱> (account , password) VALUES ('使用者輸入的帳號','使用者輸入的密碼');
 				//
-				//採用prepae預先執行SQL句子，但是似乎無法直接把參數輸入進SQL句子中，故VALUES後面括弧內的欄位以?代替
+				//採用prepae預先執行SQL句子，但是似乎無法直接把參數輸入進SQL句子中，故VALUES後面括弧內的欄位以 :對應欄位 代替
 				//$db 連線指標的結果先儲存在 $statment 變數中
 				//
 				//綁定參數請參考此連結(簡體中文/英文)
-				//http://php.net/manual/zh/pdostatement.bindparam.php
-				$statement = $db_data->prepare('INSERT INTO userdata (account , password)'.'VALUES(:account,:password))');
+				//http://php.net/manual/zh/pdo.prepared-statements.php
+				$statement = "INSERT INTO userdata (account , password)"."VALUES(:account,:password)";
+				
+
+				
 				
 				//透過execute，將POST欄位回傳到第63行，括弧的?欄位中
 				//步驟如下：(由左到右)
 				//$statment：變數傳送資料
-				//bindValue：PDO的方法，正式名稱為PDOStatement::bindValue，將SQL的?以參數方式代入
+				//bindValue：PDO的方法，正式名稱為PDOStatement::bindValue，將SQL的 :對應欄位 以參數方式代入
 				//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
 				$statement -> bindValue(array(':account',$account,PDO::PARAM_STR));
 				$statement -> bindValue(array(':password',$password,PDO::PARAM_STR)); 
 				
-				//執行預先處理過的句子
-				$statement -> execute();
-				
-				$result = $statement ->fetch(PDO::FETCH_OBJ);
-				echo $result->account;
+
+				//$result = $db_data -> prepare ($sql);
 				
 				//關閉資料庫連結
 				$db_data = NULL;
