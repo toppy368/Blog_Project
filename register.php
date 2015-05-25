@@ -24,18 +24,19 @@
 				//測試PHP是否有作用
 				echo "hello world"."<p />";
 				
-				//解決 Notice： Undefined index ... 的問題
-				if (isset($_POST["submit"])) {
-				
+				//解決undefined index的問題
+				//用IF及isset來判斷，按下submit後馬上執行以下語法
+				if(isset($_POST['submit'] {
+					
+				}
+
 				//POST傳回本頁的標籤會變成 $_POST['變數名稱'];
 				//將POST的變數統一更改為 $post_變數名稱
 				$account = $_POST['account'];
 				$password = $_POST['password'];
 				$check_password = $_POST['check_password'];
 				
-				echo $account ;
-				}
-				
+
 				
 				//將SQL連線資訊重新定義
 				//本檔案以PDO法連線到SQL資料庫，此功能PHP5以上才支援
