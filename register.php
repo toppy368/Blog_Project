@@ -89,6 +89,9 @@
 				$statement -> bindValue(array(1,$account,PDO::PARAM_STR));
 				$statement -> bindValue(array(2,$password,PDO::PARAM_STR)); 
 				
+				//執行預先處理過的句子
+				$statement -> execute();
+				
 				
 			 ?>
 	</body>
