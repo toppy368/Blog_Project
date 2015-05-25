@@ -86,7 +86,7 @@
 				//bindValue：PDO的方法，正式名稱為PDOStatement::bindValue，將SQL的?以參數方式代入
 				//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
 				$statement -> bindValue(array(1,$account,PDO::PARAM_STR));
-				$statement -> bindValue(array(2,$password,PDO::PARAM_STR));
+				$statement -> bindValue(array(2,$password,PDO::PARAM_STR)); 
 				
 				
 			 ?>
