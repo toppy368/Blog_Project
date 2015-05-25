@@ -76,10 +76,17 @@
 				//
 				//$db會送出INSERT INTO語句，但是VALUES欄位無法直接套用POST的欄位(參見27行對應表說明)，故採用?預留空間
 				//$db 連線指標的結果先儲存在 $statment 變數中
-				$statement = $db->prepare("INSERT INTO userdata ('account' , 'password')"."VALUES(?,?))");
+				//綁定參數請參考此連結(簡體中文/英文)
+				//http://php.net/manual/zh/pdostatement.bindparam.php
+				$statement = $db->prepare('INSERT INTO userdata (account , password)'.'VALUES(?,?))');
 				
 				//透過execute，將POST欄位回傳到第63行，括弧的?欄位中
-				$statement -> execute(array($account,$password));
+				//步驟如下：(由左到右)
+				//$statment：變數傳送資料
+				//bindValue：PDO的方法，正式名稱為PDOStatement::bindValue，將SQL的?以參數方式代入
+				//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
+				$statement -> bindValue(array(1,$account,PDO::PARAM_STR));
+				$statement -> bindValue(array(2,$password,PDO::PARAM_STR));
 				
 				
 			 ?>
