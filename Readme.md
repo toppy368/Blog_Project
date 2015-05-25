@@ -13,12 +13,12 @@
 
 
 ##開發環境
-作業系統：Windows 7 家用進階版
-WAMP軟體：Wamp server2.5 64bit(從2015/5/19 更改為此版本為開發端) 
-XAMPP for Windows v5.6.8 (已停用)
-開發SDK：Notepad++
+作業系統：Windows 7 家用進階版  
+WAMP軟體：(**以下兩者並存，但同時開啟會相衝突**)  
+1. Wamp server2.5 64bit  
+2. XAMPP for Windows v5.6.8  
+開發SDK：Notepad++  
 
-注意：自2015/5/19，變更開發端，已移除WAMPP for Windows v5.6.8，並由Wamp server2.5 64bit取代
 
 
 #開發語言
@@ -31,7 +31,7 @@ XAMPP for Windows v5.6.8 (已停用)
 ###MySQL 登入資訊
 
 帳號：<你的SQL帳號>  
-密碼：<你的SQL密碼>
+密碼：<你的SQL密碼>  
 資料庫檔案：blog_project.sql  
 編碼：UTF-8  
 
