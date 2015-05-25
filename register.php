@@ -33,9 +33,14 @@
 				
 				//將SQL連線資訊重新定義
 				//本檔案以PDO法連線到SQL資料庫，此功能PHP5以上才支援
+				//如果你自行安裝Web伺服器後台，改了root帳號密碼，也請修改本檔案以下資訊
+				//
+				/*資料庫連線位置：*/
 				$db_url = "mysql:host=localhost;dbname=blog_project";
-				$db_user = "<SQL帳號>";
-				$db_pw = "<SQL密碼>";
+				/*資料庫管理員帳號：*/
+				$db_user = "root";											
+				/*資料庫管理員密碼：*/
+				$db_pw = "password";										
 				
 				//儲存SQL句子的參數，初始化定義，設定為"空值"，也就是null
 				$prepare = "null";
