@@ -48,6 +48,7 @@
 				$db_data = NULL;
 				$statement = NULL;
 
+
 					
 				
 				//驗證密碼欄位是否相同
@@ -94,7 +95,6 @@
 				//binValue必須填入兩個數值，格式是 bindValue(對應第一個欄位,對應第二個欄位,PDO::PARAM_*)
 				//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
 				$statement -> execute -> bindValue(array($account,$password,PDO::PARAM_STR));
-				//$statement -> bindValue(array(':password',$password,PDO::PARAM_STR)); 
 				$statement -> execute();
 
 				$result = $db_data -> prepare ($statement);
