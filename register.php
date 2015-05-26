@@ -83,7 +83,7 @@
 				//
 				//綁定參數請參考此連結(簡體中文/英文)
 				//http://php.net/manual/zh/pdo.prepared-statements.php
-				$statement = "INSERT INTO userdata (account , password)"."VALUES(:account,:password)";
+				$statement = prepare("INSERT INTO userdata (account , password)"."VALUES(:account,:password)");
 				
 
 				
@@ -95,7 +95,7 @@
 				//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
 				$statement -> bindValue(array(':account',$account,PDO::PARAM_STR));
 				$statement -> bindValue(array(':password',$password,PDO::PARAM_STR)); 
-				
+				$statement -> execute();
 
 				$result = $db_data -> prepare ($sql);
 				
