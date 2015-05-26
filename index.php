@@ -7,7 +7,7 @@
 </head>
 <body>
 <!--本專案使用GNU GENERAL PUBLIC LICENSE Version 2為授權條款，詳情請訪問此目錄的LICENSE.txt-->
-	<h1>Blog首頁</h1><p />
+	<h1>Blog首頁</h1><p /> 
 
 </body>
 </html>
