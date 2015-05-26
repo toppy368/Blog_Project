@@ -1,6 +1,8 @@
 <?php
 	session_start();
-		//
+		//啟用session參數並導入login.php程式碼設定
+		include ('login.php');
+
 ?>
 <html>
 <head>
