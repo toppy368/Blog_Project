@@ -9,5 +9,10 @@
 <!--本專案使用GNU GENERAL PUBLIC LICENSE Version 2為授權條款，詳情請訪問此目錄的LICENSE.txt-->
 	<h1>Blog首頁</h1><p /> 
 
+	<!--PHP區域，引用其他網頁-->
+	<?php
+	//include_once();
+	
+	?>
 </body>
 </html>
