@@ -38,37 +38,39 @@
 			$db_pw = "password";										
 				
 			//儲存SQL句子的參數，初始化定義，設定為"空值"，也就是null
-			$link = NULL;
-			$str = NULL;
+			$db_data = NULL;
+			$statement = NULL;
 			$result = NULL;
 			
 			//判斷帳號是否存在
 			if (isset($account)){
 				try {
 					//判斷新輸入姓名值是否存在
-					$link = new PDO($db_url,$db_user,$db_pw);
+					$db_data = new PDO($db_url,$db_user,$db_pw);
 				} catch(PDOException $e) {
 					//發生錯誤將馬上停止程式碼
 					die($e->getMessage());
 				}
 			}
 			
-			//查詢句型以$str字串儲存，並送出SQL的SELECT敘述
+			//查詢句型以$statement字串儲存，並送出SQL的SELECT敘述
 			//SELECT字串的WHERE會篩選account與password欄位是否與PHP傳過來的值相符，不符合就跳出
 			//SELECT * FROM userdata WHERE account = :account AMD password = :password
-			$str = $link -> prepare('SELECT * FROM userdata WHERE account = ? AMD password = ?');
+			$statement = $db_data -> prepare('SELECT * FROM userdata WHERE account = :account AMD password = :password');
 			
 			//bindValue：PDO的方法，正式名稱為PDOStatement::bindValue
 			//binValue必須填入兩個數值，格式是 bindValue(對應第一個欄位,對應第二個欄位,PDO::PARAM_*)
 			//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
-			$str -> bindValue(1,$account,PDO::PARAM_STR);
-			$str -> bindValue(2,$password,PDO::PARAM_STR);
+			$statement -> bindValue(':account',$account,PDO::PARAM_STR);
+			$statement -> bindValue(':password',$password,PDO::PARAM_STR);
 			
 			//將SQL句子的單字設置 PDOStatement 對象，再將結果透過 fetchAll()方式，以陣列回傳給 $result 參數
-			$result = $str -> fetchAll (PDO::FETCH_ASSOC);
+			$result = $statement -> fetchAll (PDO::FETCH_ASSOC);
 		
 			//將SQL語法透過execute()方法寫入資料庫中
-			$str->execute();
+			$statement->execute();
+			
+			 = NULL;
 		?>
 	</body>
 </html>
