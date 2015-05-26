@@ -256,8 +256,11 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 1. 採用try catah 取代 IF 來判斷 $db_data是否順利連接資料庫，錯誤訊息將以 Exception::getMessage 顯示
 2. 建立一個名稱為 blog_project 的資料庫
 
-####3. 錯誤訊息 Notice Undefined property 及 Fatal error
+####3. 錯誤訊息 Notice Undefined property 及 Fatal error (已解決)
 **Notice**: Undefined property: PDOStatement::$execute in C:\xampp\htdocs\Blog_Project\register.php on line 97
 **Fatal error**: Call to a member function bindValue() on null in C:\xampp\htdocs\Blog_Project\register.php on line 97
+####解決方法：
+1. 刪除第98~99的executeh 方法
+2. 第105行以 fetch() 方法執行 PDO::FETCH_ASSOC 參數，設置 PDOStatement 對象並以 $user_row 參數儲存
 
 
