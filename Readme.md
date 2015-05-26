@@ -244,7 +244,7 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 #Debug Log  
 ##register.php  
-###1. 錯誤訊息 Notice Undefined index: 
+###1. 錯誤訊息 Notice Undefined index  
 **Notice**: Undefined index: account in C:\xampp\htdocs\Blog_Project\register.php on line 33  
 **Notice**: Undefined index: password in C:\xampp\htdocs\Blog_Project\register.php on line 34  
 **Notice**: Undefined index: check_password in C:\xampp\htdocs\Blog_Project\register.php on line 35  
