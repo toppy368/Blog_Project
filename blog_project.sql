@@ -1,11 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.3.11
 -- http://www.phpmyadmin.net
 --
--- 主機: localhost
--- 產生時間： 2015 �?05 ??22 ??20:20
--- 伺服器版本: 5.6.17
--- PHP 版本： 5.5.12
+-- 主機: 127.0.0.1
+-- 產生時間： 2015 �?05 ??26 ??17:20
+-- 伺服器版本: 5.6.24
+-- PHP 版本： 5.6.8
+-- 授權：GNU GENERAL PUBLIC LICENSE Version 2
+-- 授權檔：LICENSE.txt
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,35 +25,22 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `aes_table`
---
-
-CREATE TABLE IF NOT EXISTS `aes_table` (
-  `aid` int(11) NOT NULL AUTO_INCREMENT,
-  `account` char(15) COLLATE utf8_unicode_ci NOT NULL,
-  `password` varbinary(255) NOT NULL,
-  PRIMARY KEY (`aid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- 資料表結構 `userdata`
 --
 
 CREATE TABLE IF NOT EXISTS `userdata` (
   `uid` int(11) NOT NULL,
   `account` char(15) COLLATE utf8_unicode_ci NOT NULL,
-  `password` char(20) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`uid`)
+  `password` varbinary(255) NOT NULL,
+  `rtime` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- 資料表的匯出資料 `userdata`
 --
 
-INSERT INTO `userdata` (`uid`, `account`, `password`) VALUES
-(0, '測試帳號', '測試密碼');
+INSERT INTO `userdata` (`uid`, `account`, `password`, `rtime`) VALUES
+(0, 'test', 0x74657374, '0000-00-00 00:00:00');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
