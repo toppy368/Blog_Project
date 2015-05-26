@@ -16,7 +16,7 @@
 	echo "測試";
 	
 	//引入index_function.html
-	include_once(index_function.html);
+	include_once("index_function.html");
 	
 
 	?>
