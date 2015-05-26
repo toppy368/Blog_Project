@@ -238,7 +238,17 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 確定沒問題，就跟快速匯出一樣，畫面移動到最下方，按下**"執行"**，下載.sql檔就完成了  
 
 
-#專案檔案使用方式(流程)
-###1. 從首頁(index)進入註冊頁面()
-#Debug Log 
-##
+#專案檔案使用方式(流程)  
+###1. 從首頁(index)進入註冊頁面()  
+
+
+#Debug Log  
+##register.php  
+###1. 錯誤訊息 Notice Undefined index: 
+**Notice**: Undefined index: account in C:\xampp\htdocs\Blog_Project\register.php on line 33  
+**Notice**: Undefined index: password in C:\xampp\htdocs\Blog_Project\register.php on line 34  
+**Notice**: Undefined index: check_password in C:\xampp\htdocs\Blog_Project\register.php on line 35  
+
+
+####2. 錯誤訊息 Fatal error
+**Fatal error**: Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'blog_project'' in C:\xampp\htdocs\Blog_Project\register.php:62 Stack trace: #0 C:\xampp\htdocs\Blog_Project\register.php(62): PDO->__construct('mysql:host=loca...', 'root', 'password') #1 {main} thrown in C:\xampp\htdocs\Blog_Project\register.php on line 62
