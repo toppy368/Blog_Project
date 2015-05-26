@@ -64,20 +64,16 @@
 				//bindValue：PDO的方法，正式名稱為PDOStatement::bindValue
 				//binValue必須填入兩個數值，格式是 bindValue(對應第一個欄位,對應第二個欄位,PDO::PARAM_*)
 				//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
-				$sql -> bindValue(array(1,$account,PDO::PARAM_STR));
-				$sql -> bindValue(array(2,$password,PDO::PARAM_STR));
-				$sql -> execute();
+				$login -> bindValue(array(1,$account,PDO::PARAM_STR));
+				$login -> bindValue(array(2,$password,PDO::PARAM_STR));
+				
 				//
 				//$result = $db_data -> prepare($sql);
 			
 				//將SQL句子的單字設置 PDOStatement 對象，再將結果透過 fetchAll()方式，以陣列回傳給 $result 參數
-				$result = $sql -> fetchAll(PDO::FETCH_ASSOC);
+				$result = $login -> fetchAll(PDO::FETCH_ASSOC);
 
-			
-
-		
-			//將SQL語法透過execute()方法寫入資料庫中
-			//$statement->execute();
+			echo $result[1];
 
 		?>
 	</body>
