@@ -2,7 +2,15 @@
 	session_start();
 		//啟用session參數並導入login.php程式碼設定
 		include ('login.php');
+			if($_SESSION['login']==true) {
+				//持有session登入許可證者，顯示歡迎訊息
+				//但因為login.php沒完成，暫時不放帳號參數
+				echo "歡迎光臨！"."<p />";
+			} else {
+				//未登入者，顯示訊息引導登入
+				echo "<FONT COLOR='ff0000'>"."您尚未登入，請透過"."<b>"."登入"."</b>"."連結登入後再發文"."</font>"."<p />";
 
+			}
 ?>
 <html>
 <head>
