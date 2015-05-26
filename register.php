@@ -24,9 +24,7 @@
 				//測試PHP是否有作用
 				echo "hello world"."<p />";
 				
-				
-
-				
+		
 				
 				//POST傳回本頁的標籤會變成 $_POST['變數名稱'];
 				//將POST的變數統一更改為 $post_變數名稱
@@ -34,8 +32,6 @@
 				$password = $_POST['password'];
 				$check_password = $_POST['check_password'];
 				
-				
-
 				
 				//將SQL連線資訊重新定義
 				//本檔案以PDO法連線到SQL資料庫，此功能PHP5以上才支援
@@ -51,6 +47,17 @@
 				//儲存SQL句子的參數，初始化定義，設定為"空值"，也就是null
 				$prepare = NULL;
 				$db_data = NULL;
+				
+				//採用try catch處理PDO錯誤訊息
+				//try {
+					//放置$db_data及PDO連接帳密的語法
+				//}
+				//catch(PDOException $e)
+				//{
+					//如果出現PDOException訊息，將終止程式碼並執行錯誤訊息
+					//die($e->getMessage());
+				//}
+					
 				
 				//驗證密碼欄位是否相同
 				//兩組密碼欄位分別顯示成功與失敗兩組結果
