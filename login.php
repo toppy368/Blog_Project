@@ -39,9 +39,8 @@
 				
 			//儲存SQL句子的參數，初始化定義，設定為"空值"，也就是null
 			$db_data = NULL;
-			$sql = NULL;
+			$statement = NULL;
 			$result = NULL;
-			$login = NULL;
 			
 			//判斷帳號是否存在
 			if (isset($account)){
@@ -58,22 +57,32 @@
 				//查詢句型以$statement字串儲存，並送出SQL的SELECT敘述
 				//SELECT字串的WHERE會篩選account與password欄位是否與PHP傳過來的值相符，不符合就跳出
 				//SELECT * FROM userdata WHERE account = :account AMD password = :password
-				$sql = 'SELECT * FROM userdata WHERE account = ? AMD password = ?';
-				$login = $db_data -> prepare($sql);
+				$statement = $db_data -> prepare("SELECT * FROM userdata WHERE account = ? AMD password = ?");
+				
 			
 				//bindValue：PDO的方法，正式名稱為PDOStatement::bindValue
 				//binValue必須填入兩個數值，格式是 bindValue(對應第一個欄位,對應第二個欄位,PDO::PARAM_*)
 				//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
-				$login -> bindValue(array(1,$account,PDO::PARAM_STR));
-				$login -> bindValue(array(2,$password,PDO::PARAM_STR));
+				$statement -> bindValue(':account',$account,PDO::PARAM_STR);
+				$statement -> bindValue(':password',$password,PDO::PARAM_STR);
 				
+				//解決 PDOStatement相關錯誤：設置 PDOStatement 對象並以 $result 參數儲存
 				//
-				//$result = $db_data -> prepare($sql);
-			
-				//將SQL句子的單字設置 PDOStatement 對象，再將結果透過 fetchAll()方式，以陣列回傳給 $result 參數
-				$result = $login -> fetchAll(PDO::FETCH_ASSOC);
-
-			echo $result[1];
+				//以 fetchAll() 方法執行 PDO::FETCH_ASSOC 參數
+				//fetchAll() 將訊息以陣列方式傳給 $result 參數
+				//
+				//解決方法網址：
+				//http://stackoverflow.com/questions/21464158/catchable-fatal-error-object-of-class-pdostatement-could-not-be-converted-to-st
+				//
+				//PDOStatement 文件網址：
+				//http://php.net/pdo.query
+				$result = $statement -> fetchAll (PDO::FETCH_ASSOC);
+				
+				//將SQL語法透過execute()方法寫入資料庫中
+				$statement->execute();
+				
+				//關閉資料庫連結
+				$db_data = NULL;
 
 		?>
 	</body>
