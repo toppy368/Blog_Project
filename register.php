@@ -47,8 +47,8 @@
 				//儲存SQL句子的參數，初始化定義，設定為"空值"，也就是null
 				$db_data = NULL;
 				$statement = NULL;
-
-
+				$user_row = NULL;
+				
 					
 				
 				//驗證密碼欄位是否相同
@@ -75,8 +75,6 @@
 					echo "<h3 />"."密碼比對失敗"."<p />";
 				}
 				
-				
-
 					//想像中的SQL句子如下：
 					//INSERT INTO <資料表名稱> (account , password) VALUES ('使用者輸入的帳號','使用者輸入的密碼');
 					//
@@ -98,7 +96,14 @@
 					//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
 					$statement -> bindValue(':account',$account,PDO::PARAM_STR);
 					$statement -> bindValue(':password',$password,PDO::PARAM_STR);
-					//$statement -> $db_data -> prepare ($statement);
+					
+					//執行SQL語句，PDOStatement 對象以 $user_row 參數儲存
+					//以 fetch() 方法，執行 PDOStatement
+					//
+					//解決方法網址：http://stackoverflow.com/questions/21464158/catchable-fatal-error-object-of-class-pdostatement-could-not-be-converted-to-st
+					//PDOStatement 文件網址：http://php.net/pdo.query
+					$user_row = $statement -> fetch (PDO::FETCH_ASSOC);
+					
 
 				//$result = $db_data -> prepare ($statement);
 				
