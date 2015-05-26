@@ -48,15 +48,7 @@
 				$prepare = NULL;
 				$db_data = NULL;
 				
-				//採用try catch處理PDO錯誤訊息
-				//try {
-					//放置$db_data及PDO連接帳密的語法
-				//}
-				//catch(PDOException $e)
-				//{
-					//如果出現PDOException訊息，將終止程式碼並執行錯誤訊息
-					//die($e->getMessage());
-				//}
+
 					
 				
 				//驗證密碼欄位是否相同
@@ -64,14 +56,20 @@
 				if ($password == $check_password) {
 					//如果兩組密碼相符的話，會顯示以下字串
 					echo "<h3 />"."密碼比對成功"."<p />";
-						//透過PDO連線到phpMyAdmin
-						//資料庫帳號密碼及連線資訊儲存在 $db_data 參數中(連線指標)
-						$db_data = new PDO($db_url,$db_user,$db_pw);
-							//如果db_data連接錯誤，會顯示PDO錯誤訊息
-							if (!$db_data){
-								echo "\nPDO::errorInfo():";
-								print_r($db_data->errorInfo()); 
-							}
+						
+						//採用try catch處理PDO錯誤訊息
+							try {
+									//放置$db_data及PDO連接帳密的語法
+									//透過PDO連線到phpMyAdmin
+									//資料庫帳號密碼及連線資訊儲存在 $db_data 參數中(連線指標)
+									$db_data = new PDO($db_url,$db_user,$db_pw);
+								}
+								catch(PDOException $e)
+								{
+									//如果出現PDOException訊息，將終止程式碼並執行錯誤訊息
+									die($e->getMessage());
+								}
+
 				}
 				else {
 					//如果兩組密碼不相符，會顯示以下字串
