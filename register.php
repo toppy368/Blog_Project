@@ -66,7 +66,7 @@
 								}
 								catch(PDOException $e)
 								{
-									//如果出現PDOException訊息，將終止程式碼並執行錯誤訊息
+									//如果出現PDOException訊息，將終止程式碼並以 Exception::getMessage 錯誤訊息
 									die($e->getMessage());
 								}
 

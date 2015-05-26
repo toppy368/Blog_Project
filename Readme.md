@@ -250,5 +250,7 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 **Notice**: Undefined index: check_password in C:\xampp\htdocs\Blog_Project\register.php on line 35  
 
 
-####2. 錯誤訊息 Fatal error
+###2. 錯誤訊息 Fatal error
 **Fatal error**: Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'blog_project'' in C:\xampp\htdocs\Blog_Project\register.php:62 Stack trace: #0 C:\xampp\htdocs\Blog_Project\register.php(62): PDO->__construct('mysql:host=loca...', 'root', 'password') #1 {main} thrown in C:\xampp\htdocs\Blog_Project\register.php on line 62
+####解決辦法：
+1. 採用try catah 取代 IF 來判斷 $db_data是否順利連接資料庫，錯誤訊息將以 Exception::getMessage 顯示
