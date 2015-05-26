@@ -97,15 +97,21 @@
 					$statement -> bindValue(':account',$account,PDO::PARAM_STR);
 					$statement -> bindValue(':password',$password,PDO::PARAM_STR);
 					
-					//執行SQL語句，PDOStatement 對象以 $user_row 參數儲存
-					//以 fetch() 方法，執行 PDOStatement
+					//解決 PDOStatement相關錯誤：設置 PDOStatement 對象並以 $user_row 參數儲存
 					//
-					//解決方法網址：http://stackoverflow.com/questions/21464158/catchable-fatal-error-object-of-class-pdostatement-could-not-be-converted-to-st
-					//PDOStatement 文件網址：http://php.net/pdo.query
+					//以 fetch() 方法執行 PDO::FETCH_ASSOC 參數，再將結果儲存至 $user_row 上
+					//
+					//解決方法網址：
+					//http://stackoverflow.com/questions/21464158/catchable-fatal-error-object-of-class-pdostatement-could-not-be-converted-to-st
+					//
+					//PDOStatement 文件網址：
+					//http://php.net/pdo.query
 					$user_row = $statement -> fetch (PDO::FETCH_ASSOC);
 					
-
-				//$result = $db_data -> prepare ($statement);
+					//將SQL語法透過execute()方法寫入資料庫中
+					$statement->execute();
+					
+				echo "註冊成功";
 				
 				//關閉資料庫連結
 				$db_data = NULL;
