@@ -1,3 +1,7 @@
+<?php
+	session_start();
+		//
+?>
 <html>
 <head>
 <!-- Title and meat data  -->
@@ -11,9 +15,6 @@
 
 	<!--PHP區域，引用其他網頁-->
 	<?php
-	
-	//判斷是否登入，如果沒有就希望按下超連結
-	echo "測試";
 	
 	//引入index_function.html
 	include_once("index_function.html");
