@@ -239,8 +239,17 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 
 
 #專案檔案使用方式(流程)  
-###1. 從首頁(index)進入註冊頁面()  
-
+##安裝方式：
+1. 將 Blog_Project 整個專案下載下來  
+2. 將資料夾裏頭的所有檔案複製到Web伺服器的根目錄  
+3. 進入phpMyAdmin建立空的資料庫並將blog_project.sql匯入資料庫  
+##使用方式：
+1. 進入index.html (**未完成**)
+2. 從首頁點選連結到  register.php 註冊帳號
+2. 點選"登入"進到 login.php 登入帳號密碼 (**未完成**)
+4. "登入"後會進入 /admin/admin.php (**未完成**)
+5. 點選"新增文章"並打一篇文章並按下"發表" (**未完成**)
+6. 文章標題及內容會顯示在"首頁"(index.html)上 (**未完成**)
 
 #Debug Log  
 ##register.php  
