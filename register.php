@@ -21,11 +21,7 @@
 		
 		<!--以下為PHP章節，將使用者填好的帳號密碼透過PHP寫入到MySQL資料庫-->
 			<?php
-				//測試PHP是否有作用
-				echo "hello world"."<p />";
-				
-		
-				
+							
 				//POST傳回本頁的標籤會變成 $_POST['變數名稱'];
 				//將POST的變數統一更改為 $post_變數名稱
 				$account = $_POST['account'];
@@ -115,10 +111,11 @@
 					//將SQL語法透過execute()方法寫入資料庫中
 					$statement->execute();
 					
-				echo "註冊成功";
 				
 				//關閉資料庫連結
 				$db_data = NULL;
+				
+
 			 ?>
 	</body>
 </html>
