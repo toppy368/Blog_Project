@@ -89,11 +89,11 @@
 				//$statment：變數傳送資料
 				//bindValue：PDO的方法，正式名稱為PDOStatement::bindValue，將SQL的 :對應欄位 以參數方式代入
 				//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
-				$statement -> bindValue(array(':account',$account,PDO::PARAM_STR));
-				$statement -> bindValue(array(':password',$password,PDO::PARAM_STR)); 
+				$statement -> bindValue(array(':account',$account));
+				$statement -> bindValue(array(':password',$password)); 
 				
 
-				//$result = $db_data -> prepare ($sql);
+				$result = $db_data -> prepare ($sql);
 				
 				//關閉資料庫連結
 				$db_data = NULL;
