@@ -18,5 +18,11 @@
 				密碼：<input type="password" name="password" /></p>
 			<input type="submit" value="登入"></p>
 		<!--以下為PHP章節，此區的PHP負責核對使用者輸入的資料是否與資料庫的帳密相符合-->
+		<?php
+		
+		
+		
+		
+		?>
 	</body>
 </html>
