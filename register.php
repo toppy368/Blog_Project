@@ -69,7 +69,6 @@
 									//如果出現PDOException訊息，將終止程式碼並以 Exception::getMessage 錯誤訊息
 									die($e->getMessage());
 								}
-
 				}
 				else {
 					//如果兩組密碼不相符，會顯示以下字串
@@ -94,8 +93,8 @@
 				//$statment：變數傳送資料
 				//bindValue：PDO的方法，正式名稱為PDOStatement::bindValue，將SQL的 :對應欄位 以參數方式代入
 				//PDO::PARAM_*可對應到SQL欄位對應型態，請參考以下網址：http://php.net/manual/zh/pdo.constants.php
-				$statement -> bindValue(array(':account',$account));
-				$statement -> bindValue(array(':password',$password)); 
+				$statement -> bindValue(array(':account',$account,PDO::PARAM_STR));
+				$statement -> bindValue(array(':password',$password,PDO::PARAM_STR)); 
 				
 
 				$result = $db_data -> prepare ($sql);
