@@ -45,9 +45,8 @@
 				$db_pw = "password";										
 				
 				//儲存SQL句子的參數，初始化定義，設定為"空值"，也就是null
-				$prepare = NULL;
 				$db_data = NULL;
-				
+				$statement = NULL;
 
 					
 				
@@ -83,7 +82,7 @@
 				//
 				//綁定參數請參考此連結(簡體中文/英文)
 				//http://php.net/manual/zh/pdo.prepared-statements.php
-				$statement = prepare("INSERT INTO userdata (account , password)"."VALUES(:account,:password)");
+				$statement = $db_data -> prepare("INSERT INTO userdata (account , password)"."VALUES(:account,:password)");
 				
 
 				
@@ -97,7 +96,7 @@
 				$statement -> bindValue(array(':password',$password,PDO::PARAM_STR)); 
 				$statement -> execute();
 
-				$result = $db_data -> prepare ($sql);
+				$result = $db_data -> prepare ($statement);
 				
 				//關閉資料庫連結
 				$db_data = NULL;
