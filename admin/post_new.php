@@ -55,7 +55,7 @@
 				//
 				//以 prepare 方法處裡SQL語法，使用方法如下
 				//prepare("SQL句子");
-				postdata("INSERT INTO postdata ('title','context') VALUES('title','context')");
+				//prepare("INSERT INTO postdata ('title','context') VALUES('title','context')");
 	?>
 </body>
 </html>
