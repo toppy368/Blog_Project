@@ -59,12 +59,18 @@
 				//
 				//以 prepare 方法處裡SQL語法，使用方法如下
 				//prepare("SQL句子");
+				//
+				//關於prepare的說明及範例，請參考以下網址：
+				//http://php.net/manual/en/pdo.prepare.php
 				$sql = $db_link -> prepare("INSERT INTO postdata (pid,title,context) VALUES(NULL,:title,:context)");
 				
 				//以bindValue方式將參數寫入60行SQL句子中
 				//
 				//bindValue格式如下：
 				//bindValue(":SQL對應欄位",參數對應欄位,PDO::PARAM_*資料型態)
+				//
+				//詳細網址：
+				//http://php.net/manual/en/pdostatement.bindvalue.php
 				//
 				//詳細類別請參考 php.net 說明：
 				//http://php.net/manual/en/pdo.constants.php
@@ -77,7 +83,14 @@
 				//以query取回以上SQL語法送出的結果
 				//$result = $db_link -> query($sql);
 
-
+				//PDO::FETCH_ASSOC 為獲取資料的方式，詳情請參考85行網址
+				//網址：
+				//http://php.net/manual/en/pdostatement.fetch.php
+				//
+				//以 fetchAll 獲得SQL句子的所有資料，並以陣列儲存在數值中
+				//
+				//
+				//$result = $sql -> fetchAll (PDO::FETCH_ASSOC);
 
 	?>
 </body>
