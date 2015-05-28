@@ -16,5 +16,9 @@
 	<input type="submit" value="發表"><p />
 	</form>
 	
+	<?php
+	//PHP區域，本區域將連結phpMyAdmin，MySQL資料庫伺服器
+	
+	?>
 </body>
 </html>
