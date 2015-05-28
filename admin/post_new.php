@@ -34,7 +34,8 @@
 				
 				//定義SQL語法相關參數為NULL(空值)
 				//同時作為參數對照表：
-				$db_data = NULL;
+				$db_data = NULL; 	/* $db_data 資料庫連接指標*/
+				$sql = NULL;		/* $sql SQL句子相關操作 */
 
 				//採用try catch處理PDO錯誤訊息
 				try {
@@ -56,8 +57,17 @@
 				//
 				//以 prepare 方法處裡SQL語法，使用方法如下
 				//prepare("SQL句子");
-				//prepare("INSERT INTO postdata ('title','context') VALUES('title','context')");
+				$sql = $db_data -> prepare("INSERT INTO postdata (pid,title,context) VALUES(NULL,:title,:context)");
 				
+				//以bindValue方式將參數寫入60行SQL句子中
+				//
+				//bindValue格式如下：
+				//bindValue(":SQL對應欄位",參數對應欄位,PDO::PARAM_*資料型態)
+				//
+				//詳細類別請參考 php.net 說明：
+				//http://php.net/manual/en/pdo.constants.php
+				$sql -> bindValue(":title",$_GET['title'],PDO::PARAM_STR);
+				$sql -> bindValue(":context",$_GET['context'],PDO::PARAM_STR)
 
 				
 				
