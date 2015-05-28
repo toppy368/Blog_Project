@@ -56,7 +56,7 @@
 							$db_link = new PDO($db_url,$db_user,$db_pw);
 						} else {
 							//如果帳密輸入錯誤，會以文字警告並跳出判斷式
-							echo "<font color='ff0000'>"."<h3>"."密碼不相符！請重新輸入"."</h3>"."</font>"."</ p>";
+							echo "<font color='ff0000'>"."<h3>"."密滿欄不相符！請檢查欄位再重新輸入"."</h3>"."</font>"."</ p>";
 						}
 					}
 					catch(PDOException $e)
