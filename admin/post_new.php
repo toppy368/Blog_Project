@@ -7,6 +7,8 @@
 </head>
 <body>
 <!--本專案使用GNU GENERAL PUBLIC LICENSE Version 2為授權條款，詳情請訪問此目錄的LICENSE.txt-->
+<h1>新增文章</h1><p />
+	<!--新增文章表單內容-->
 	<form action="post_new.php" method="get">
 			文章標題：<input type="text" name="title" /></br>
 			文章內文：<br />
