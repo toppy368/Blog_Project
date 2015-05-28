@@ -20,10 +20,10 @@
 		<input type="submit" value="申請帳號"></p>
 		
 		<!--以下為PHP章節，將使用者填好的帳號密碼透過PHP寫入到MySQL資料庫-->
-			<?php
+		<?php
 
 				
 
-			 ?>
+		 ?>
 	</body>
 </html>
