@@ -31,6 +31,10 @@
 				$db_user = "root";											
 				/*資料庫管理員密碼：*/
 				$db_pw = "password";
+				
+				//定義SQL語法相關參數為NULL
+				//同時作為參數對照表：
+				$db_data = NULL;
 
 				//採用try catch處理PDO錯誤訊息
 				try {
