@@ -79,6 +79,15 @@
 				//以 execute() 方法執行 SQL 參數
 				$sql->execute();
 				
+				//關閉資料庫連結
+				//
+				//舊版mysql_close參數已於PHP5以上停用
+				//根據 php.net說明，PDO只要將連線指標設定為NULL即可關閉資料庫連結
+				//
+				//相關討論：
+				//http://stackoverflow.com/questions/1046614/do-sql-connections-opened-with-pdo-in-php-have-to-be-closed
+				$db_link = NULL;
+				
 				//以下PHP區域將做為驗證用途
 				//
 				//驗證範例網址：
