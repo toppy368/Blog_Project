@@ -34,15 +34,16 @@
 				
 				//定義SQL語法相關參數為NULL(空值)
 				//同時作為參數對照表：
-				$db_data = NULL; 	/* $db_data 資料庫連接指標*/
+				$db_link = NULL; 	/* $db_link 資料庫連接指標*/
 				$sql = NULL;		/* $sql SQL句子相關操作 */
+				$post_result = NULL /* SQL回傳的結果 */
 
 				//採用try catch處理PDO錯誤訊息
 				try {
-						//放置$db_data及PDO連接帳密的語法
+						//放置$db_link及PDO連接帳密的語法
 						//透過PDO連線到phpMyAdmin
-						//資料庫帳號密碼及連線資訊儲存在 $db_data 參數中(連線指標)
-						$db_data = new PDO($db_url,$db_user,$db_pw);
+						//資料庫帳號密碼及連線資訊儲存在 $db_link 參數中(連線指標)
+						$db_link = new PDO($db_url,$db_user,$db_pw);
 					}
 					catch(PDOException $e)
 					{
@@ -57,7 +58,7 @@
 				//
 				//以 prepare 方法處裡SQL語法，使用方法如下
 				//prepare("SQL句子");
-				$sql = $db_data -> prepare("INSERT INTO postdata (pid,title,context) VALUES(NULL,:title,:context)");
+				$sql = $db_link -> prepare("INSERT INTO postdata (pid,title,context) VALUES(NULL,:title,:context)");
 				
 				//以bindValue方式將參數寫入60行SQL句子中
 				//
@@ -67,7 +68,9 @@
 				//詳細類別請參考 php.net 說明：
 				//http://php.net/manual/en/pdo.constants.php
 				$sql -> bindValue(":title",$_GET['title'],PDO::PARAM_STR);
-				$sql -> bindValue(":context",$_GET['context'],PDO::PARAM_STR)
+				$sql -> bindValue(":context",$_GET['context'],PDO::PARAM_STR);
+				
+				//->($sql);
 
 				
 				
