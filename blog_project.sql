@@ -3,11 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- 主機: 127.0.0.1
--- 產生時間： 2015 �?05 ??28 ??16:23
+-- 產生時間： 2015 �?05 ??28 ??19:42
 -- 伺服器版本: 5.6.24
 -- PHP 版本： 5.6.8
--- 授權：GNU GENERAL PUBLIC LICENSE Version 2
--- 授權檔：LICENSE.txt
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -32,7 +30,14 @@ CREATE TABLE IF NOT EXISTS `postdata` (
   `pid` int(11) NOT NULL,
   `title` char(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   `context` text COLLATE utf8_unicode_ci
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- 資料表的匯出資料 `postdata`
+--
+
+INSERT INTO `postdata` (`pid`, `title`, `context`) VALUES
+(1, 'C', 'DE');
 
 -- --------------------------------------------------------
 
@@ -69,7 +74,7 @@ ALTER TABLE `userdata`
 -- 使用資料表 AUTO_INCREMENT `postdata`
 --
 ALTER TABLE `postdata`
-  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- 使用資料表 AUTO_INCREMENT `userdata`
 --

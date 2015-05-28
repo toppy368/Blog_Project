@@ -30,10 +30,7 @@
 				/*資料庫管理員帳號：*/
 				$db_user = "root";											
 				/*資料庫管理員密碼：*/
-				$db_pw = "password";
-				
-				//處理 Notice: Undefined index 錯誤問題
-				if ()
+				$db_pw = "password";				
 				
 				//定義SQL語法相關參數為NULL(空值)
 				//同時作為參數對照表：
@@ -54,7 +51,6 @@
 						//如果出現PDOException訊息，將終止程式碼並以 Exception::getMessage 錯誤訊息
 						die($e->getMessage());
 					}
-
 				
 				//寫入SQL語法：
 				//INSERT INTO postdata (title , context) VALUES(:title,:context);
@@ -67,6 +63,7 @@
 				//http://php.net/manual/en/pdo.prepare.php
 				$sql = $db_link -> prepare("INSERT INTO postdata (pid,title,context) VALUES(NULL,:title,:context)");
 				
+
 				//以bindValue方式將參數寫入60行SQL句子中
 				//
 				//bindValue格式如下：
