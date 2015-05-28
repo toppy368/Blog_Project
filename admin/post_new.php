@@ -72,7 +72,7 @@
 				$sql -> bindValue(":context",$_GET['context'],PDO::PARAM_STR);
 				
 				//以query取回以上SQL語法送出的結果
-				$result = $db_link -> query($sql);
+				//$result = $db_link -> query($sql);
 
 				
 				
