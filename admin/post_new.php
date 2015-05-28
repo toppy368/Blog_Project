@@ -91,6 +91,8 @@
 				//
 				//
 				//$result = $sql -> fetchAll (PDO::FETCH_ASSOC);
+				
+				//驗證以上寫入動作是否完成
 
 	?>
 </body>
