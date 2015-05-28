@@ -90,6 +90,9 @@
 					//從 $db_link 參數(資料指標) 操作，顯示PDO錯誤資訊
 					echo "\nPDO::errorInfo():\n";
 					print_r($db_link -> errorInfo());
+				} else {
+					//如果SQL正常運作且能發表文章，以h3標題顯示發表"成功字樣"
+					echo "<h3>"."文章發表完畢！"."</h3>"."</ p>";
 				}
 
 	?>
