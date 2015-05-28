@@ -52,6 +52,7 @@
 				
 				//寫入SQL語法：
 				//INSERT INTO postdata (title , context) VALUES(:title,:context);
+				//INSERT INTO `blog_project`.`postdata` (`pid`, `title`, `context`, `pdata`) VALUES (NULL, 'A', 'C', NULL);
 				//
 				//以 prepare 方法處裡SQL語法，使用方法如下
 				//prepare("SQL句子");
