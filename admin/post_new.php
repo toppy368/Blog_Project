@@ -80,19 +80,17 @@
 				//以 execute() 方法執行 SQL 參數
 				$sql->execute();
 				
-				//以query取回以上SQL語法送出的結果
-				//$result = $db_link -> query($sql);
-
-				//PDO::FETCH_ASSOC 為獲取資料的方式，詳情請參考85行網址
-				//網址：
-				//http://php.net/manual/en/pdostatement.fetch.php
+				//以下PHP區域將做為驗證用途
 				//
-				//以 fetchAll 獲得SQL句子的所有資料，並以陣列儲存在數值中
+				//驗證範例網址：
+				//http://php.net/manual/en/pdo.errorinfo.php
 				//
-				//
-				//$result = $sql -> fetchAll (PDO::FETCH_ASSOC);
-				
-				//驗證以上寫入動作是否完成
+				//以 if 參數來判斷 !$sql 表示 sql 參數不符合
+				if (!$sql) {
+					//從 $db_link 參數(資料指標) 操作，顯示PDO錯誤資訊
+					echo "\nPDO::errorInfo():\n";
+					print_r($db_link -> errorInfo());
+				}
 
 	?>
 </body>
