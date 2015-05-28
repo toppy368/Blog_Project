@@ -71,7 +71,6 @@
 				$sql -> bindValue(":title",$_GET['title'],PDO::PARAM_STR);
 				$sql -> bindValue(":context",$_GET['context'],PDO::PARAM_STR);
 				
-				
 				//以 execute() 方法執行 SQL 參數
 				$sql->execute();
 				
