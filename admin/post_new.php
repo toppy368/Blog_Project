@@ -62,7 +62,6 @@
 				//關於prepare的說明及範例，請參考以下網址：
 				//http://php.net/manual/en/pdo.prepare.php
 				$sql = $db_link -> prepare("INSERT INTO postdata (pid,title,context) VALUES(NULL,:title,:context)");
-				
 
 				//以bindValue方式將參數寫入60行SQL句子中
 				//
