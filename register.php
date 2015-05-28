@@ -36,6 +36,21 @@
 				/*資料庫管理員密碼：*/
 				$db_pw = "password";
 				
+				
+				
+				//採用try catch處理PDO錯誤訊息
+				try {
+						//放置$db_link及PDO連接帳密的語法
+						//透過PDO連線到phpMyAdmin
+						//資料庫帳號密碼及連線資訊儲存在 $db_link 參數中(連線指標)
+						$db_link = new PDO($db_url,$db_user,$db_pw);
+					}
+					catch(PDOException $e)
+					{
+						//如果出現PDOException訊息，將終止程式碼並以 Exception::getMessage 錯誤訊息
+						die($e->getMessage());
+					}
+				
 
 		 ?>
 	</body>
