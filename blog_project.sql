@@ -3,9 +3,11 @@
 -- http://www.phpmyadmin.net
 --
 -- 主機: 127.0.0.1
--- 產生時間： 2015 �?05 ??28 ??19:42
+-- 產生時間： 2015 �?05 ??28 ??19:42
 -- 伺服器版本: 5.6.24
 -- PHP 版本： 5.6.8
+-- 授權：GNU GENERAL PUBLIC LICENSE Version 2
+-- 授權檔：LICENSE.txt
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
