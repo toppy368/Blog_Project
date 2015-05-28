@@ -47,7 +47,15 @@
 					{
 						//如果出現PDOException訊息，將終止程式碼並以 Exception::getMessage 錯誤訊息
 						die($e->getMessage());
-					}				
+					}
+
+				
+				//寫入SQL語法：
+				//INSERT INTO postdata (title , context) VALUES(:title,:context);
+				//
+				//以 prepare 方法處裡SQL語法，使用方法如下
+				//prepare("SQL句子");
+				postdata("INSERT INTO postdata ('title','context') VALUES('title','context')");
 	?>
 </body>
 </html>
