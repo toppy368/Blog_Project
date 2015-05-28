@@ -7,6 +7,6 @@
 </head>
 <body>
 <!--本專案使用GNU GENERAL PUBLIC LICENSE Version 2為授權條款，詳情請訪問此目錄的LICENSE.txt-->
-
+	<form action="post_new.php" method="get">
 </body>
 </html>
