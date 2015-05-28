@@ -36,7 +36,8 @@
 				//同時作為參數對照表：
 				$db_link = NULL; 	/* $db_link 資料庫連接指標*/
 				$sql = NULL;		/* $sql SQL句子相關操作 */
-				$post_result = NULL /* SQL回傳的結果 */
+				$result = NULL 		/* SQL回傳的結果 */
+				$post_row = NULL 	/* 文章內容的陣列 */
 
 				//採用try catch處理PDO錯誤訊息
 				try {
@@ -70,7 +71,8 @@
 				$sql -> bindValue(":title",$_GET['title'],PDO::PARAM_STR);
 				$sql -> bindValue(":context",$_GET['context'],PDO::PARAM_STR);
 				
-				//->($sql);
+				//以query取回以上SQL語法送出的結果
+				$result = $db_link -> query($sql);
 
 				
 				
