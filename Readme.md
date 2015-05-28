@@ -248,7 +248,7 @@ WAMP的phpMyAdmin資料夾在此目錄下：C:\wamp\apps\phpMyAdmin4.1.14
 2. 從首頁點選連結到  register.php 註冊帳號
 2. 點選"登入"進到 login.php 登入帳號密碼 (**未完成**)
 4. "登入"後會進入 /admin/admin.php (**未完成**)
-5. 點選"新增文章"並打一篇文章並按下"發表" (**未完成**)
+5. 點選"新增文章"，進入post_new.php，打一篇文章並按下"發表"  
 6. 文章標題及內容會顯示在"首頁"(index.html)上 (**未完成**)
 
 #Debug Log  
