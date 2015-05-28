@@ -58,7 +58,7 @@
 				//prepare("SQL句子");
 				//prepare("INSERT INTO postdata ('title','context') VALUES('title','context')");
 				
-				
+
 				
 				
 
