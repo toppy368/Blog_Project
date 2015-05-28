@@ -32,7 +32,7 @@
 				/*資料庫管理員密碼：*/
 				$db_pw = "password";
 				
-				//定義SQL語法相關參數為NULL
+				//定義SQL語法相關參數為NULL(空值)
 				//同時作為參數對照表：
 				$db_data = NULL;
 
