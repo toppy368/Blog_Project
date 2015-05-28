@@ -32,6 +32,9 @@
 				/*資料庫管理員密碼：*/
 				$db_pw = "password";
 				
+				//處理 Notice: Undefined index 錯誤問題
+				if ()
+				
 				//定義SQL語法相關參數為NULL(空值)
 				//同時作為參數對照表：
 				$db_link = NULL; 	/* $db_link 資料庫連接指標*/
