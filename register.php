@@ -42,10 +42,19 @@
 				
 				//採用try catch處理PDO錯誤訊息
 				try {
-						//放置$db_link及PDO連接帳密的語法
-						//透過PDO連線到phpMyAdmin
-						//資料庫帳號密碼及連線資訊儲存在 $db_link 參數中(連線指標)
-						$db_link = new PDO($db_url,$db_user,$db_pw);
+						//判斷"輸入密碼"欄位與"再輸入密碼"欄位數值一樣
+						//判定條件：以 if else 判斷條件是否相符
+						// A == B 雙等號等於兩者數字相符
+						if ($_POST['password'] == $_POST['check_password']) {
+							
+							//顯示密碼相符字樣(開發用途，稍後刪除)
+							echo "<font color='ff0000'>"."<h3>"."密碼相符"."</h3>"."</font>"."</ p>";
+							
+							//放置$db_link及PDO連接帳密的語法
+							//透過PDO連線到phpMyAdmin
+							//資料庫帳號密碼及連線資訊儲存在 $db_link 參數中(連線指標)
+							$db_link = new PDO($db_url,$db_user,$db_pw);
+						}
 					}
 					catch(PDOException $e)
 					{
@@ -54,19 +63,7 @@
 					}
 				
 				
-				//判斷"輸入密碼"欄位與"再輸入密碼"欄位數值一樣
-				//判定條件：以 if else 判斷條件是否相符
-				// A == B 雙等號等於兩者數字相符
-				if ($_POST['password'] == $_POST['check_password']) {
-					echo "<h3>"."密碼相符"."</h3>"."</ p>";
-				} else {
-					//如果兩者密碼不相符，會顯示不相符的訊息
-					echo "<h3>"."輸入密碼欄位與再輸入密碼欄位不符！請再輸入一次！"."</h3>"."</ p>";
-							//顯示文字錯誤的同時，也會中斷資料庫連線
-							//從 $db_link 參數(資料指標) 操作，顯示PDO錯誤資訊
-							echo "\nPDO::errorInfo():\n";
-							print_r($db_link -> errorInfo());
-				}
+
 				
 		 ?>
 	</body>
