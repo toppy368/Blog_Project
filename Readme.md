@@ -159,9 +159,17 @@ https://github.com/toppy368/phpMyAdmin_help
 進度條：60%  
 用途：引入文章清單及功能清單  
 
+近況顯示：能正常顯示index_postlist.html的超連結內容及index_postlist.php的Hello World標題  
+
 ####index_function.html  
 進度條：100%  
 用途：供index.php引入用，內有連結引導使用者進帳號管理頁面  
+
+####index_postlist.php  
+進度條：1%
+用途：供index.php引入用
+
+近況顯示：先在php區域顯示Hello World為h1標題，並讓index.php能看到此字樣  
 
   
 ###帳號管理  
@@ -171,8 +179,8 @@ https://github.com/toppy368/phpMyAdmin_help
 近況：**可正常使用**
 
 ####login.php  
-用途：登入會員帳號  
 進度條：50%  
+用途：登入會員帳號  
 
 近況表示：出現 Fatal error: Call to a member function prepare() on null 錯誤訊息
 
@@ -183,6 +191,7 @@ Admin/admin.php
 
 ####文章
 Admin/post_new.php  
-用途：開發新文章  
 進度條：90%  
+用途：發表新文章  
+
 近況：**可正常使用，但後續功能可能增加**
