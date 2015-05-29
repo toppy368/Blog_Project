@@ -199,6 +199,8 @@ https://github.com/toppy368/phpMyAdmin_help
 進度條：0%  
 用途：引入會員參數(門禁&通行證)、引入選單及文章管理功能
 
+近況：**尚未產生檔案**  
+
 
 ####文章  
 ####Admin/post_new.php  
