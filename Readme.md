@@ -174,7 +174,7 @@ https://github.com/toppy368/phpMyAdmin_help
 
 
 ####index_postlist.php  
-進度條：1%
+進度條：1%  
 用途：供index.php引入用  
 
 近況顯示：先在php區域顯示Hello World為h1標題，並讓index.php能看到此字樣  
