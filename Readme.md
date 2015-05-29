@@ -68,7 +68,16 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 **Tips：**  
 1. 建議把此機制想成Google Docs，填好內容按下"送出"後，Google Docs的主人可透過Docs的試算表看到你的回應  
 2. 部分 [內容管理系統] (http://zh.wikipedia.org/wiki/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F) ，或架站平台，如部落格架站軟體 [**Wordpress**] (https://tw.wordpress.org/) 、 **論壇**架站軟體 [**Discuz**] (http://www.discuz.net/forum.php) 、 商業網站架站軟體 [**Joomla!**] (http://www.joomla.org.tw/) 也採用HTML+PHP+MySQL架構
+3. 關於今天被刪除的root帳密設定，請參見以下說明
 
+####2015/5/29 文章變動說明
+因為要整理章節，把本專案聚焦於網頁資料庫開發，因此整個SQL相關的章節，即日起進行調整，調整項目如下：  
+1. **刪除** root 帳密設定相關內容，只保留SQL檔的匯入/匯出章節  
+2. 資料庫**匯入/匯出**功能因為關係到網站的**資料備份**，予以**保留**  
+
+關於phpMyAdmin操作，本文件將只會說明**匯入/匯出**功能  
+其他功能的使用說明請參考新專案 phpMyAdmin_hele 專案： 
+https://github.com/toppy368/phpMyAdmin_help 
 
 ###透過phpMyAdmin匯入SQL檔
 
