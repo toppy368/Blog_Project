@@ -153,7 +153,11 @@ https://github.com/toppy368/phpMyAdmin_help
 
 
 ##各檔案功能說明
-這個專案目前為止將分為四大功能，分別為**首頁**、**帳號**、**後台**、**文章**四大區域，以下將顯示每個功能所包含的檔案名稱及目前進度  
+這個專案目前為止將分為四大功能，分別為**首頁**、**帳號**、**後台**、**文章**四大區域，其中**首頁與帳號**都在根目錄下、**後臺及文章**放在admin資料夾中  
+
+以下將顯示每個功能所包含的檔案名稱及目前進度  
+
+
 ###首頁系統
 ####index.php  
 進度條：90%  
@@ -163,9 +167,11 @@ https://github.com/toppy368/phpMyAdmin_help
 1. 能正常顯示index_postlist.html的超連結內容及index_postlist.php的Hello World標題
 2. 等index.postlist.php開發完成，首頁功能就完成了 !    
 
+
 ####index_function.html  
 進度條：100%  
 用途：供index.php引入用，內有連結引導使用者進帳號管理頁面  
+
 
 ####index_postlist.php  
 進度條：1%
@@ -180,16 +186,19 @@ https://github.com/toppy368/phpMyAdmin_help
 用途：註冊會員帳號  
 近況：**可正常使用**
 
+
 ####login.php  
 進度條：50%  
 用途：登入會員帳號  
 
 近況表示：出現 **Fatal error: Call to a member function prepare**() **on null** 錯誤訊息
 
+
 ###後臺  
 ####Admin/admin.php  
 進度條：0%  
 用途：引入會員參數(門禁&通行證)、引入選單及文章管理功能
+
 
 ####文章
 ####Admin/post_new.php  
