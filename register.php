@@ -75,6 +75,20 @@
 				//關於prepare的說明及範例，請參考以下網址：
 				//http://php.net/manual/en/pdo.prepare.php
 				$sql = $db_link -> prepare("INSERT INTO userdata (account,password) VALUES(:account,:password)");
+				
+				//以bindValue方式將參數寫入60行SQL句子中
+				//
+				//bindValue格式如下：
+				//bindValue(":SQL對應欄位",參數對應欄位,PDO::PARAM_*資料型態)
+				//
+				//詳細網址：
+				//http://php.net/manual/en/pdostatement.bindvalue.php
+				//
+				//詳細類別請參考 php.net 說明：
+				//http://php.net/manual/en/pdo.constants.php
+				$sql -> bindValue(":account",$_POST['account'],PDO::PARAM_STR);
+				$sql -> bindValue(":password",$_POST['password'],PDO::PARAM_STR);
+				
 
 				
 		 ?>
