@@ -148,3 +148,8 @@ https://github.com/toppy368/phpMyAdmin_help
 4. "登入"後會進入 /admin/admin.php (**未完成**)
 5. 點選"新增文章"，進入post_new.php，打一篇文章並按下"發表"  
 6. 文章標題及內容會顯示在"首頁"(index.html)上 (**未完成**)
+
+###各檔案功能說明
+####首頁系統
+####帳號管理系統
+####後臺系統
