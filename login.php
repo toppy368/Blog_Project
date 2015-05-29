@@ -58,7 +58,7 @@
 			//
 			//關於prepare的說明及範例，請參考以下網址：
 			//http://php.net/manual/en/pdo.prepare.php
-				$sql = $db_link -> prepare("SELECT * FROM userdata"."WHERE account = :account AND password = :password");
+				$sql = $db_link -> prepare("SELECT * FROM userdata"."WHERE account = :account AND password = :password;");
 				
 			//以bindValue方式將參數寫入60行SQL句子中
 			//
@@ -66,7 +66,9 @@
 			//bindValue(":SQL對應欄位",參數對應欄位,PDO::PARAM_*資料型態)
 				$sql -> bindValue(":account",$_POST['account'],PDO::PARAM_STR);
 				$sql -> bindValue(":password",$_POST['password'],PDO::PARAM_STR);
-				
+			
+			//以 execute() 方法執行寫入 SQL 資料庫的動作：77行prepaer預先處裡SQL句子、89及90行bindValue參數代入
+				$sql->execute();
 		?>
 	</body>
 </html>
