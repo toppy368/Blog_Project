@@ -117,6 +117,17 @@
 					//如果SQL正常運作且能發表文章，以h3標題顯示發表"成功字樣"
 					echo "<font color='ff0000'>"."<h3>"."註冊成功！"."</h3>"."</font>"."</ p>";
 				}
+				
+				//採用try catch處理PDO錯誤訊息
+				try {
+						
+					}
+					catch(PDOException $e)
+					{
+						//如果出現PDOException訊息，將終止程式碼並以 Exception::getMessage 錯誤訊息
+						die($e->getMessage());
+					}
+				
 		 ?>
 	</body>
 </html>
