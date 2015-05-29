@@ -39,6 +39,7 @@
 				//定義SQL語法相關參數為NULL(空值)
 				//同時作為參數對照表：
 				$db_link = NULL; 	/* $db_link 資料庫連接指標*/
+				$sql = NULL;		/* $sql SQL句子相關操作 */
 				
 				//採用try catch處理PDO錯誤訊息
 				try {
