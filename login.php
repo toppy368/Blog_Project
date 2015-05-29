@@ -60,6 +60,9 @@
 			//http://php.net/manual/en/pdo.prepare.php
 				$sql = $db_link -> prepare("SELECT * FROM userdata"."WHERE account = :account AND password = :password");
 				
+			//
+				$sql -> bindValue(":account",$_POST['account'],PDO::PARAM_STR);
+				$sql -> bindValue(":password",$_POST['password'],PDO::PARAM_STR);
 		?>
 	</body>
 </html>
