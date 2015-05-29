@@ -20,20 +20,13 @@ WAMP軟體：(**以下兩者並存，但同時開啟會相衝突**)
 開發SDK：Notepad++  
 
 
-
 ##開發語言
 前端：HTML、CSS  
 後端：PHP、MySQL
 
-編碼：一律採用UTF-8
-
-
-###MySQL 登入資訊
-
 資料庫檔案：blog_project.sql  
-編碼：UTF-8  
+編碼：一律採用UTF-8 (詳細：utf8_unicode_ci)
 
-以上資訊是本次開發端的phpMyAdmin帳密，不過看過SQL檔似乎沒有寫入這行限制，因此大家能自行設定root帳號，詳情請參考**SQL相關**章節
 
 ##導入GitHub說明 
 本次開發導入GitHub雲端版本管理，將專案目錄建立在網頁伺服器根目錄，這樣檔案測試存檔後，能直接透過GitHub客戶端Commit並將程式碼即時同步上去
