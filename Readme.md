@@ -164,7 +164,7 @@ https://github.com/toppy368/phpMyAdmin_help
 用途：引入文章清單及功能清單  
 
 近況顯示：  
-1. 能正常顯示index_postlist.html的超連結內容及index_postlist.php的Hello World標題
+1. 能正常顯示index_postlist.html的超連結內容及index_postlist.php的Hello World標題  
 2. 等index.postlist.php開發完成，首頁功能就完成了 !    
 
 
@@ -175,7 +175,7 @@ https://github.com/toppy368/phpMyAdmin_help
 
 ####index_postlist.php  
 進度條：1%
-用途：供index.php引入用
+用途：供index.php引入用  
 
 近況顯示：先在php區域顯示Hello World為h1標題，並讓index.php能看到此字樣  
 
