@@ -19,23 +19,8 @@
 			<input type="submit" value="登入"></p>
 		<!--以下為PHP章節，此區的PHP負責核對使用者輸入的資料是否與資料庫的帳密相符合-->
 		<?php
+
 									
-			//POST傳回本頁的標籤會變成 $_POST['變數名稱'];
-			//將POST的變數統一更改為 $post_變數名稱
-			$account = $_POST['account'];
-			$password = $_POST['password'];
-				
-				
-			//將SQL連線資訊重新定義
-			//本檔案以PDO法連線到SQL資料庫，此功能PHP5以上才支援
-			//如果你自行安裝Web伺服器後台，改了root帳號密碼，也請修改本檔案以下資訊
-			//
-			/*資料庫連線位置：*/
-			$db_url = "mysql:host=localhost;dbname=blog_project";
-			/*資料庫管理員帳號：*/
-			$db_user = "root";											
-			/*資料庫管理員密碼：*/
-			$db_pw = "password";										
 				
 			//儲存SQL句子的參數，初始化定義，設定為"空值"，也就是null
 			$db_data = NULL;
