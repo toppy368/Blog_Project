@@ -34,13 +34,16 @@
 			/*資料庫管理員密碼：*/
 				$db_pw = "password";
 
-			
+			//定義SQL語法相關參數為NULL(空值)
+			//同時作為參數對照表：
+				$db_link = NULL; 	/* $db_link 資料庫連接指標*/
+				$sql = NULL;		/* $sql SQL句子相關操作 */
 			
 			//判斷帳號是否存在
 			if (isset($account)){
 				try {
 					//判斷新輸入姓名值是否存在
-					$db_data = new PDO($db_url,$db_user,$db_pw);
+					//$db_data = new PDO($db_url,$db_user,$db_pw);
 				} catch(PDOException $e) {
 					//發生錯誤將馬上停止程式碼
 					die($e->getMessage());
