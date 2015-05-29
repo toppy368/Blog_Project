@@ -115,7 +115,7 @@
 					
 						//跳轉程式碼，本案例不適合用 header() ，故採用HTML的meta標籤
 						//content 控制秒數、url 控制跳轉位置
-						echo "<meta http-equiv='refresh' content='5';url='login.php'>";
+						//echo "<meta http-equiv='refresh' content='0';url='login.php'>";
 				}
 				
 		 ?>
