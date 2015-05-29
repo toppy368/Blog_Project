@@ -27,7 +27,8 @@
 	
 	//引入index_function.html
 	include_once("index_function.html");
-	
+	//引入index_postlist.php
+	include_once("index_postlist.php");
 
 	?>
 </body>
