@@ -61,7 +61,6 @@
 						die($e->getMessage());
 					}
 				
-				
 				//寫入SQL語法：
 				//INSERT INTO userdata (account , password) VALUES(:account,:password);
 				//
