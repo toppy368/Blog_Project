@@ -111,6 +111,11 @@
 				} else {
 					//如果SQL正常運作且能發表文章，以h3標題顯示發表"成功字樣"
 					echo "<font color='ff0000'>"."<h3>"."註冊成功！"."</h3>"."</font>"."</ p>";
+					echo "<font color='ff0000'>"."五秒後跳轉到登入頁面，請稍後"."</font>"."</ p>";
+					
+						//跳轉程式碼，本案例不適合用 header() ，故採用HTML的meta標籤
+						//content 控制秒數、url 控制跳轉位置
+						echo "<meta http-equiv='refresh' content='5';url='login.php'>";
 				}
 				
 		 ?>
