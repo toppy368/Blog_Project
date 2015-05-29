@@ -140,16 +140,16 @@ https://github.com/toppy368/phpMyAdmin_help
 1. 在自己的電腦安裝能支援HTML+PHP、MySQL的伺服器  
 2. 將 Blog_Project 整個專案下載下來，有兩種下載方法，第一種是按下**Download zip**按鈕、第二種是按下**Clone in Disktop**(**需安裝Github客戶端軟體**)  
 3. 將資料夾裏頭的所有檔案複製到Web伺服器的根目錄  
-4. 進入phpMyAdmin建立空的資料庫並將blog_project.sql匯入資料庫  
-##使用方式：
-1. 進入index.html (**未完成**)
-2. 從首頁點選連結到  register.php 註冊帳號
-2. 點選"登入"進到 login.php 登入帳號密碼 (**未完成**)
-4. "登入"後會進入 /admin/admin.php (**未完成**)
+4. 進入phpMyAdmin建立空的資料庫並將blog_project.sql匯入資料庫    
+##使用方式：  
+1. 進入index.html (**未完成**)  
+2. 從首頁點選連結到  register.php 註冊帳號  
+2. 點選"登入"進到 login.php 登入帳號密碼 (**未完成**)  
+4. "登入"後會進入 /admin/admin.php (**未完成**)  
 5. 點選"新增文章"，進入post_new.php，打一篇文章並按下"發表"  
-6. 文章標題及內容會顯示在"首頁"(index.html)上 (**未完成**)
+6. 文章標題及內容會顯示在"首頁"(index.html)上 (**未完成**)  
 
-###各檔案功能說明
-####首頁系統
-####帳號管理系統
-####後臺系統
+##各檔案功能說明
+###首頁系統  
+###帳號管理系統  
+###後臺系統  
