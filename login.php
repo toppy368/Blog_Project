@@ -67,8 +67,9 @@
 				$sql -> bindValue(":account",$_POST['account'],PDO::PARAM_STR);
 				$sql -> bindValue(":password",$_POST['password'],PDO::PARAM_STR);
 			
-			//以 execute() 方法執行寫入 SQL 資料庫的動作：77行prepaer預先處裡SQL句子、89及90行bindValue參數代入
-				$sql->execute();
+
+				
+				
 		?>
 	</body>
 </html>
