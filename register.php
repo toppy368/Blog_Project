@@ -102,6 +102,21 @@
 				//相關討論：
 				//http://stackoverflow.com/questions/1046614/do-sql-connections-opened-with-pdo-in-php-have-to-be-closed
 				$db_link = NULL;
+				
+				//以下PHP區域將驗證是否註冊成功
+				//
+				//驗證範例網址：
+				//http://php.net/manual/en/pdo.errorinfo.php
+				//
+				//以 if 參數來判斷 !$sql 表示 sql 參數不符合
+				if (!$sql) {
+					//從 $db_link 參數(資料指標) 操作，顯示PDO錯誤資訊
+					echo "\nPDO::errorInfo():\n";
+					print_r($db_link -> errorInfo());
+				} else {
+					//如果SQL正常運作且能發表文章，以h3標題顯示發表"成功字樣"
+					echo "<font color='ff0000'>"."<h3>"."註冊成功！"."</h3>"."</font>"."</ p>";
+				}
 		 ?>
 	</body>
 </html>
