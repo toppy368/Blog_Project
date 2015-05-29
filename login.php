@@ -58,7 +58,7 @@
 			//
 			//關於prepare的說明及範例，請參考以下網址：
 			//http://php.net/manual/en/pdo.prepare.php
-				$sql = $db_link -> query("SELECT * FROM userdata"."WHERE account = :account AND password = :password;");
+				$sql = $db_link -> prepare("SELECT * FROM userdata"."WHERE account = :account AND password = :password;");
 				
 			//以bindParam方式將參數寫入60行SQL句子中 
 			//
