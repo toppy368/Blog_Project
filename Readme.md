@@ -147,26 +147,3 @@ https://github.com/toppy368/phpMyAdmin_help
 4. "登入"後會進入 /admin/admin.php (**未完成**)
 5. 點選"新增文章"，進入post_new.php，打一篇文章並按下"發表"  
 6. 文章標題及內容會顯示在"首頁"(index.html)上 (**未完成**)
-
-#Debug Log  
-##register.php  
-###1. 錯誤訊息 Notice Undefined index  
-**Notice**: Undefined index: account in C:\xampp\htdocs\Blog_Project\register.php on line 33  
-**Notice**: Undefined index: password in C:\xampp\htdocs\Blog_Project\register.php on line 34  
-**Notice**: Undefined index: check_password in C:\xampp\htdocs\Blog_Project\register.php on line 35  
-
-
-###2. 錯誤訊息 Fatal error (已解決)
-**Fatal error**: Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'blog_project'' in C:\xampp\htdocs\Blog_Project\register.php:62 Stack trace: #0 C:\xampp\htdocs\Blog_Project\register.php(62): PDO->__construct('mysql:host=loca...', 'root', 'password') #1 {main} thrown in C:\xampp\htdocs\Blog_Project\register.php on line 62
-####解決辦法：
-1. 採用try catah 取代 IF 來判斷 $db_data是否順利連接資料庫，錯誤訊息將以 Exception::getMessage 顯示
-2. 建立一個名稱為 blog_project 的資料庫
-
-####3. 錯誤訊息 Notice Undefined property 及 Fatal error (已解決)
-**Notice**: Undefined property: PDOStatement::$execute in C:\xampp\htdocs\Blog_Project\register.php on line 97
-**Fatal error**: Call to a member function bindValue() on null in C:\xampp\htdocs\Blog_Project\register.php on line 97
-####解決方法：
-1. 刪除第98~99的 executeh 方法
-2. 第105行以 fetch() 方法執行 PDO::FETCH_ASSOC 參數，設置 PDOStatement 對象並以 $user_row 參數儲存
-
-
