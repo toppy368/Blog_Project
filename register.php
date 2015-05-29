@@ -45,11 +45,7 @@
 						//判斷"輸入密碼"欄位與"再輸入密碼"欄位數值一樣
 						//判定條件：以 if else 判斷條件是否相符
 						// A == B 雙等號等於兩者數字相符
-						if ($_POST['password'] == $_POST['check_password']) {
-							
-							//顯示密碼相符字樣(開發用途，稍後刪除)
-							echo "<font color='ff0000'>"."<h3>"."密碼相符"."</h3>"."</font>"."</ p>";
-							
+						if ($_POST['password'] == $_POST['check_password']) {							
 							//放置$db_link及PDO連接帳密的語法
 							//透過PDO連線到phpMyAdmin
 							//資料庫帳號密碼及連線資訊儲存在 $db_link 參數中(連線指標)
