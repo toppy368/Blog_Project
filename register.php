@@ -41,6 +41,15 @@
 				$db_link = NULL; 	/* $db_link 資料庫連接指標*/
 				$sql = NULL;		/* $sql SQL句子相關操作 */
 				
+				//使用 try catch 處理 Note Error
+				//
+				try {
+					
+					
+				} catch (Exception $e) {
+					echo 'Caught exception: ',  $e->getMessage(), "\n";
+				}
+				
 				//採用try catch處理PDO錯誤訊息
 				try {
 						//判斷"輸入密碼"欄位與"再輸入密碼"欄位數值一樣
