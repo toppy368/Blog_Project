@@ -67,15 +67,14 @@
 				
 				
 				//寫入SQL語法：
-				//INSERT INTO userdata (uid , password) VALUES(:uid,:password);
-				//INSERT INTO `blog_project`.`postdata` (`pid`, `title`, `context`, `pdata`) VALUES (NULL, 'A', 'C', NULL);
+				//INSERT INTO userdata (account , password) VALUES(:account,:password);
 				//
 				//以 prepare 方法處裡SQL語法，使用方法如下
 				//prepare("SQL句子");
 				//
 				//關於prepare的說明及範例，請參考以下網址：
 				//http://php.net/manual/en/pdo.prepare.php
-				//$sql = $db_link -> prepare("INSERT INTO postdata (pid,title,context) VALUES(NULL,:title,:context)");
+				$sql = $db_link -> prepare("INSERT INTO userdata (account,password) VALUES(:account,:password)");
 
 				
 		 ?>
