@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主機: 127.0.0.1
--- 產生時間： 2015 �?05 ??29 ??14:58
+-- 產生時間： 2015 �?05 ??29 ??22:04
 -- 伺服器版本: 5.6.24
 -- PHP 版本： 5.6.8
 -- 授權：GNU GENERAL PUBLIC LICENSE Version 2
@@ -46,25 +46,6 @@ CREATE TABLE IF NOT EXISTS `userdata` (
   `password` varbinary(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- 已匯出資料表的索引
---
-
---
--- 資料表索引 `userdata`
---
-ALTER TABLE `userdata`
-  ADD PRIMARY KEY (`aid`);
-
---
--- 在匯出的資料表使用 AUTO_INCREMENT
---
-
---
--- 使用資料表 AUTO_INCREMENT `userdata`
---
-ALTER TABLE `userdata`
-  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
