@@ -200,7 +200,7 @@ https://github.com/toppy368/phpMyAdmin_help
 用途：引入會員參數(門禁&通行證)、引入選單及文章管理功能
 
 
-####文章
+####文章  
 ####Admin/post_new.php  
 進度條：90%  
 用途：發表新文章  
