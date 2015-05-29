@@ -50,7 +50,16 @@
 				}
 			}
 			
-
+			//查詢SQL語法：
+			//SELECT * FROM 'userdata' WHERE account= ? AND password= ?;
+			//
+			//以 prepare 方法處裡SQL語法，使用方法如下
+			//prepare("SQL句子");
+			//
+			//關於prepare的說明及範例，請參考以下網址：
+			//http://php.net/manual/en/pdo.prepare.php
+				$sql = $db_link -> prepare("");
+				
 		?>
 	</body>
 </html>
