@@ -60,12 +60,12 @@
 			//http://php.net/manual/en/pdo.prepare.php
 				$sql = $db_link -> prepare("SELECT * FROM userdata"."WHERE account = :account AND password = :password;");
 				
-			//以bindparam方式將參數寫入60行SQL句子中
+			//以bindValue方式將參數寫入60行SQL句子中
 			//
-			//bindparam格式如下：
-			//bindparam(":SQL對應欄位",參數對應欄位,PDO::PARAM_*資料型態)
-				$sql -> bindparam(":account",$_POST['account'],PDO::PARAM_STR);
-				$sql -> bindparam(":password",$_POST['password'],PDO::PARAM_STR);
+			//bindValue格式如下：
+			//bindValue(":SQL對應欄位",參數對應欄位,PDO::PARAM_*資料型態)
+				$sql -> bindValue(":account",$_POST['account'],PDO::PARAM_STR);
+				$sql -> bindValue(":password",$_POST['password'],PDO::PARAM_STR);
 			
 
 				
