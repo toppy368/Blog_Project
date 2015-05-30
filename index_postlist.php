@@ -19,11 +19,11 @@
 		//左邊的參數會儲存右邊雙引號的連線資訊，您可以自行修改右邊雙引號的內容而不必修改整個檔案
 		//
 		/*資料庫連線位置：*/
-		
+			$db_url = "mysql:host=localhost;dbname=blog_project";	
 		/*資料庫管理員帳號：*/
-		
+			$db_user = "root";
 		/*資料庫管理員密碼：*/
-		
+			$db_pw = "password";		
 		
 ?>
 </body>
