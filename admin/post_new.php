@@ -38,7 +38,6 @@
 				$sql = NULL;		/* $sql SQL句子相關操作 */
 				$result = NULL; 	/* SQL回傳的結果 */
 				$post_row = NULL; 	/* 文章內容的陣列 */
-
 				//採用try catch處理PDO錯誤訊息
 				try {
 						//放置$db_link及PDO連接帳密的語法
@@ -54,15 +53,14 @@
 				
 				//寫入SQL語法：
 				//INSERT INTO postdata (title , context) VALUES(:title,:context);
-				//INSERT INTO `blog_project`.`postdata` (`pid`, `title`, `context`) VALUES ('', ':title',':context'); 
+				//INSERT INTO `blog_project`.`postdata` (`pid`, `title`, `context`, `pdata`) VALUES (NULL, 'A', 'C', NULL);
 				//
 				//以 prepare 方法處裡SQL語法，使用方法如下
 				//prepare("SQL句子");
 				//
 				//關於prepare的說明及範例，請參考以下網址：
 				//http://php.net/manual/en/pdo.prepare.php
-				$sql = $db_link -> prepare("INSERT INTO postdata (title,context) VALUES(:title,:context)");
-
+				$sql = $db_link -> prepare("INSERT INTO postdata (pid,title,context) VALUES(NULL,:title,:context)");
 				//以bindValue方式將參數寫入60行SQL句子中
 				//
 				//bindValue格式如下：
@@ -102,7 +100,6 @@
 					//如果SQL正常運作且能發表文章，以h3標題顯示發表"成功字樣"
 					echo "<h3>"."文章發表完畢！"."</h3>"."</ p>";
 				}
-
 	?>
 </body>
 </html>
