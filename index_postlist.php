@@ -29,7 +29,7 @@
 		//同時作為參數對照表：
 			$db_link = NULL; 	/* $db_link 資料庫連接指標*/
 			$sql = NULL;		/* $sql SQL句子相關操作 */
-		
+			
 		//查詢SQL語法：
 		//SELECT * FROM postdata LIMIT 0 , 30;
 		//
@@ -40,8 +40,6 @@
 		//http://php.net/manual/en/pdo.prepare.php
 			$sql = $db_link -> prepare("SELECT * FROM postdata LIMIT 0 , 30");
 		
-		//以 execute() 方法執行寫入 SQL 資料庫的動作：77行prepaer預先處裡SQL句子、89及90行bindValue參數代入
-			$sql->execute();
 ?>
 </body>
 </html>
