@@ -30,7 +30,14 @@
 			$db_link = NULL; 	/* $db_link 資料庫連接指標*/
 			$sql = NULL;		/* $sql SQL句子相關操作 */
 		
-		
+		//查詢SQL語法：
+		//SELECT * FROM 'postdata' WHERE ;
+		//
+		//以 prepare 方法處裡SQL語法，使用方法如下
+		//prepare("SQL句子");
+		//
+		//關於prepare的說明及範例，請參考以下網址：
+		//http://php.net/manual/en/pdo.prepare.php
 ?>
 </body>
 </html>
