@@ -78,6 +78,15 @@
 			
 			//以 fatchAll 方法，將上述SQL句子以陣列方式存回 $result 參數
 				$result = $db_link -> fetchall(PDO::FETCH_ASSOC);
+				
+			//關閉資料庫連結
+			//
+			//舊版mysql_close參數已於PHP5以上停用
+			//根據 php.net說明，PDO只要將連線指標設定為NULL即可關閉資料庫連結
+			//
+			//相關討論：
+			//http://stackoverflow.com/questions/1046614/do-sql-connections-opened-with-pdo-in-php-have-to-be-closed
+				$db_link = NULL;
 
 		?>
 	</body>
