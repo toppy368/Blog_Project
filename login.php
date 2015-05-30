@@ -78,7 +78,7 @@
 			
 			//以 fatchAll 方法，將上述SQL句子以陣列方式存回 $result 參數
 				$result = $db_link -> fetchall(PDO::FETCH_ASSOC);
-				
+
 		?>
 	</body>
 </html>
