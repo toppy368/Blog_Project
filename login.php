@@ -51,27 +51,27 @@
 			}
 			
 			//查詢SQL語法：
-			//SELECT * FROM 'userdata' WHERE account = :account AND password = :password;
+			//SELECT * FROM `userdata` WHERE `account` = 'account' AND `password` = 'password'; 
 			//
 			//以 prepare 方法處裡SQL語法，使用方法如下
 			//prepare("SQL句子");
 			//
 			//關於prepare的說明及範例，請參考以下網址：
 			//http://php.net/manual/en/pdo.prepare.php
-				$sql = $db_link -> prepare("SELECT * FROM userdata"."WHERE account = :account AND password = :password;");
+				$sql = $db_link -> prepare("SELECT * FROM 'userdata'"."WHERE 'account' = ':account' AND 'password' = ':password';");
 				
-			//以bindParam方式將參數寫入60行SQL句子中 
+			//以bindValue方式將參數寫入60行SQL句子中
 			//
-			//當下達 INSERT INTO '資料表名稱'   ... 時，請用PDOStatement::bindValue
-			//當下達 SELECT * FROM '資料表名稱' ... 時，請用PDOStatement::bindParam
+			//bindValue格式如下：
+			//bindValue(":SQL對應欄位",參數對應欄位,PDO::PARAM_*資料型態)
 			//
-			//bindParam格式如下：
-			//bindParam(":SQL對應欄位",參數對應欄位,PDO::PARAM_*資料型態)
+			//詳細網址：
+			//http://php.net/manual/en/pdostatement.bindvalue.php
 			//
-			//詳細說明：
-			//http://php.net/manual/en/pdostatement.bindparam.php
-				$sql -> bindParam(":account",$_POST['account'],PDO::PARAM_STR);
-				$sql -> bindParam(":password",$_POST['password'],PDO::PARAM_STR);
+			//詳細類別請參考 php.net 說明：
+			//http://php.net/manual/en/pdo.constants.php
+				$sql -> bindValue(":account",$_POST['account'],PDO::PARAM_STR);
+				$sql -> bindValue(":password",$_POST['password'],PDO::PARAM_STR);
 			
 			//以 execute() 方法執行寫入 SQL 資料庫的動作：77行prepaer預先處裡SQL句子、89及90行bindValue參數代入
 				$sql->execute();
