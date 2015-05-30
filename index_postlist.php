@@ -38,7 +38,10 @@
 		//
 		//關於prepare的說明及範例，請參考以下網址：
 		//http://php.net/manual/en/pdo.prepare.php
-		$sql = $db_link -> prepare("SELECT * FROM postdata LIMIT 0 , 30");
+			$sql = $db_link -> prepare("SELECT * FROM postdata LIMIT 0 , 30");
+		
+		//以 execute() 方法執行寫入 SQL 資料庫的動作：77行prepaer預先處裡SQL句子、89及90行bindValue參數代入
+			$sql->execute();
 ?>
 </body>
 </html>
