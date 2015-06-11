@@ -17,8 +17,7 @@
 WAMP軟體：(**以下兩者並存，但同時開啟會相衝突**)  
 1. Wamp server2.5 64bit  
 2. XAMPP for Windows v5.6.8  
-開發SDK：Notepad++  
-
+開發SDK：Notepad++    
 
 
 ##開發語言
@@ -27,6 +26,8 @@ WAMP軟體：(**以下兩者並存，但同時開啟會相衝突**)
 
 資料庫檔案：blog_project.sql  
 編碼：一律採用UTF-8 (詳細：utf8_unicode_ci)
+
+以上是開發環境的硬體及開發語言，本專案目前沒有在虛擬主機或VPS等外部伺服器上測試或運作，不同OS的使用者只要找到能執行PHP+SQL的伺服器軟體，都可以協助測試此專案(但須注意語言版本)  
 
 
 ##導入GitHub說明 
