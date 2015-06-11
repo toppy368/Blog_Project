@@ -61,7 +61,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 **Tips：**  
 1. 建議把此機制想成Google Docs，填好內容按下"送出"後，Google Docs的主人可透過Docs的試算表看到你的回應  
-2. 部分 [內容管理系統] (http://zh.wikipedia.org/wiki/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F) ，或架站平台，如**部落格**架站軟體 [**Wordpress**] (https://tw.wordpress.org/) 、 **論壇**架站軟體 [**Discuz**] (http://www.discuz.net/forum.php) 、 商業網站架站軟體 [**Joomla!**] (http://www.joomla.org.tw/) 也採用HTML+PHP+MySQL架構
+2. 部分 [內容管理系統] (http://zh.wikipedia.org/wiki/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F) ，或架站平台，如**部落格**架站軟體 [**Wordpress**] (https://tw.wordpress.org/) 、 **論壇**架站軟體 [**Discuz**] (http://www.discuz.net/forum.php) 、 商業網站架站軟體 [**Joomla!**] (http://www.joomla.org.tw/) 也採用HTML+PHP+MySQL架構  
 3. 關於今天被刪除的root帳密設定，請參見以下說明
 
 ####2015/5/29 文章變動說明
