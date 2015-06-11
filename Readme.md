@@ -52,8 +52,8 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 ##SQL 相關
 每個瀏覽器的SQL登入路徑都不同，加上資料安全的疑慮，所以就不寫出登入連結了，請參考各網頁伺服器的phpMyAdmin登入方法
 
-**Q：為什麼這個專案需要SQL資料庫呢 ? **  
-**A:** 這個專案是要自己建立一個部落格後台系統，類似商業網誌如無名小站(已倒站)及痞客邦，或類似部落格架站軟體Wordpress的一種Blog系統，不過本專案不會有那麼多功能，只是想建立一個小型的Blog架站機制，練習互動式網頁語法  
+**Q：為什麼這個專案需要SQL資料庫呢？**  
+**A：** 這個專案是要自己建立一個部落格後台系統，類似商業網誌如無名小站(已倒站)及痞客邦，或類似部落格架站軟體Wordpress的一種Blog系統，不過本專案不會有那麼多功能，只是想建立一個小型的Blog架站機制，練習互動式網頁語法  
 
 如果只透過HTML或網頁設計丙級所設計出來的網站，也許只用到了HTML跟CSS跟少量的繪圖軟體(PhotoImpact)，但是HTML只能建立簡易表單，**按下"送出"後，文件卻無法送出**，因為**資料沒有儲存的地方，所以按了也無法送出資料**  
 
@@ -61,7 +61,7 @@ Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 **Tips：**  
 1. 建議把此機制想成Google Docs，填好內容按下"送出"後，Google Docs的主人可透過Docs的試算表看到你的回應  
-2. 部分 [內容管理系統] (http://zh.wikipedia.org/wiki/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F) ，或架站平台，如部落格架站軟體 [**Wordpress**] (https://tw.wordpress.org/) 、 **論壇**架站軟體 [**Discuz**] (http://www.discuz.net/forum.php) 、 商業網站架站軟體 [**Joomla!**] (http://www.joomla.org.tw/) 也採用HTML+PHP+MySQL架構
+2. 部分 [內容管理系統] (http://zh.wikipedia.org/wiki/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F) ，或架站平台，如**部落格**架站軟體 [**Wordpress**] (https://tw.wordpress.org/) 、 **論壇**架站軟體 [**Discuz**] (http://www.discuz.net/forum.php) 、 商業網站架站軟體 [**Joomla!**] (http://www.joomla.org.tw/) 也採用HTML+PHP+MySQL架構
 3. 關於今天被刪除的root帳密設定，請參見以下說明
 
 ####2015/5/29 文章變動說明
