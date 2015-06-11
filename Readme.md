@@ -18,7 +18,7 @@ WAMP軟體：(**以下兩者並存，但同時開啟會相衝突**)
 1. Wamp server2.5 64bit  
 2. XAMPP for Windows v5.6.8  
 開發SDK：Notepad++  
-test 測試
+
 
 
 ##開發語言
@@ -36,6 +36,8 @@ test 測試
 Commit網址：https://github.com/toppy368/Blog_Project/commits/master
 
 雖然GitHub有Commit功能，可以追蹤程式碼的變化，不過我還是會每行寫註解，幫助大家了解每一行含式的功能是做什麼用的
+
+**注意：**本專案的檔案隨時可能有更新，因此下載檔案時請直接從專案資料夾下載檔案覆蓋即可  
 
 
 ##安全性警告
