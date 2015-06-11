@@ -219,6 +219,6 @@ https://github.com/toppy368/phpMyAdmin_help
 ###資料庫
 ####blog_project.sql
 進度條：??  
-用途：  
+用途：供各種網頁檔案新增、查詢、修改資料的資料庫系統  
 
-近況：
+近況：增加註冊用的**userdata**資料表、及文章相關的**postdata**資料表，但彼此尚未建立關聯  
