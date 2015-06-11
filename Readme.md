@@ -18,6 +18,7 @@ WAMP軟體：(**以下兩者並存，但同時開啟會相衝突**)
 1. Wamp server2.5 64bit  
 2. XAMPP for Windows v5.6.8  
 開發SDK：Notepad++  
+test
 
 
 ##開發語言
