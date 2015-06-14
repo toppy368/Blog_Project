@@ -2,7 +2,7 @@
 <head>
 	<!-- title And meat data -->
 	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<!--This file is register.php-->
+		<!--This file is register_setup.php-->
 		<title>註冊帳號 - 帳號管理介面</title>
 </head>
 	<body>
@@ -13,7 +13,7 @@
 		<!--HTML表單，註冊用途-->
 		<h2>請輸入您想申請的帳號密碼</h2></p>
 		<!--本HTML表單將以POST方式回傳資料回本檔案-->
-		<form action="register.php" method="post">
+		<form action="register_setup.php" method="post">
 		請輸入帳號：<input type="text" name="account" /><br />
 		請輸入密碼：<input type="password" name="password" /><br />
 		再輸入密碼：<input type="password" name="check_password" /><p />
