@@ -190,16 +190,29 @@ https://github.com/toppy368/phpMyAdmin_help
 近況顯示：先在php區域顯示Hello World為h1標題，並讓index.php能看到此字樣  
 
   
-###帳號管理  
-####register.php   
-進度條：99% (需修改)  
-用途：註冊會員帳號  
+###帳號管理
+**注意**：**自2015/6/14日起，表單與PHP執行碼分開成兩個檔案，詳情請看以下內容**  
+####register_form.html(原 register.php 表單部分)   
+進度條：100%   
+用途：註冊會員帳號的表單  
 近況：**可正常使用**
 
 
-####login.php  
+####register_setup.php (原 register.php 的PHP指令碼)   
+進度條：100%   
+用途：註冊會員帳號的PHP設定  
+近況：**可正常使用**
+
+
+####login_form.html (原 login.php 的表單) 
+進度條：100%  
+用途：登入會員帳號的表單  
+近況：**可正常使用**
+
+
+####login_setup.php (原 login.php 的PHP指令碼)  
 進度條：50%  
-用途：登入會員帳號  
+用途：登入會員帳號的PHP設定  
 
 近況表示：出現 **Fatal error: Call to a member function prepare**() **on null** 錯誤訊息
 
